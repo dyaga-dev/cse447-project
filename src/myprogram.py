@@ -11,10 +11,15 @@ class MyModel:
     """
 
     @classmethod
-    def load_training_data(cls):
+    def load_training_data(cls, fname):
         # your code here
         # this particular model doesn't train
-        return []
+        data = []
+        with open(fname) as f:
+            for line in f:
+                inp = line[:-1]  # the last character is a newline
+                data.append(inp)
+        return data
 
     @classmethod
     def load_test_data(cls, fname):
@@ -69,6 +74,8 @@ if __name__ == '__main__':
     parser.add_argument('--test_output', help='path to write test predictions', default='pred.txt')
     args = parser.parse_args()
 
+    train_data_file = 'training_data/train_input.txt'
+
     random.seed(0)
 
     if args.mode == 'train':
@@ -78,7 +85,7 @@ if __name__ == '__main__':
         print('Instatiating model')
         model = MyModel()
         print('Loading training data')
-        train_data = MyModel.load_training_data()
+        train_data = MyModel.load_training_data(train_data_file)
         print('Training')
         model.run_train(train_data, args.work_dir)
         print('Saving model')
