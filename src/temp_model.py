@@ -169,7 +169,7 @@ def top3_next_chars_from_last_char(last_ch, W, ctoi, itoc):
 
 
 # Read the example file (each line is a partial phrase)
-lines = open('../example/train_input.txt', 'r').read().splitlines()
+lines = open('./example/input.txt', 'r').read().splitlines()
 
 for line in lines:
     s = line.rstrip("\n")
