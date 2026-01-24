@@ -144,6 +144,8 @@ for step in range(steps):
     loss.backward()
     W.data += -best_lr * W.grad
 
+    print(W)
+    
 import torch
 import torch.nn.functional as F
 
