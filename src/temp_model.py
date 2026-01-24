@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-words = open('/Users/jiachensun/Desktop/CSE 447/cse447-project-1/training_data/train_input.txt', 'r').read().split()
+words = open('./training_data/train_input.txt', 'r').read().split()
 # word len : 171914
 # min and max later
 
@@ -169,7 +169,7 @@ def top3_next_chars_from_last_char(last_ch, W, ctoi, itoc):
 
 
 # Read the example file (each line is a partial phrase)
-lines = open('/Users/jiachensun/Desktop/CSE 447/cse447-project-1/example/train_input.txt', 'r').read().splitlines()
+lines = open('./example/input.txt', 'r').read().splitlines()
 
 for line in lines:
     s = line.rstrip("\n")
