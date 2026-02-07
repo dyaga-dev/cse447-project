@@ -13,26 +13,6 @@ class MyModel:
     """
     This is a starter model to get you started. Feel free to modify this file.
     """
-
-    def top3_next_chars_from_last_char(self, last_ch, W, ctoi, itoc):
-        # If last character isn't in vocab, you can handle it here
-        if last_ch not in ctoi:
-            return [("<?>", 0.0), ("<?>", 0.0), ("<?>", 0.0)]
-
-        idx = ctoi[last_ch]
-
-        # (1, V)
-        enc_x = F.one_hot(torch.tensor([idx]), num_classes=W.shape[0]).float()
-        logits = enc_x @ W  # (1, V)
-
-        # Convert logits -> probabilities
-        probs = logits.softmax(dim=1).squeeze(0)  # (V,)
-
-        # Top 3 indices
-        top_probs, top_idx = torch.topk(probs, k=3)
-
-        # Return [(char, prob), ...]
-        return [(itoc[i.item()], top_probs[j].item()) for j, i in enumerate(top_idx)]
     
     @classmethod
     def load_training_data(cls, fname):
@@ -62,147 +42,129 @@ class MyModel:
                 f.write('{}\n'.format(p))
 
     def run_train(self, data, work_dir):
-        words = words = [word for s in data for word in s.split()]
+        words = [word for s in data for word in s.split()]
         # word len : 171914
         # min and max later
 
         ctoi = {ch : i for i, ch in enumerate(sorted(set("".join(words))))}
         itoc = {v:k for k, v in ctoi.items()}
 
-        counts_tensor = torch.zeros((85,85), dtype=torch.int32)
+        chars = sorted(list(set("".join(words))))
+        chars = ['.'] + chars          # start / stop token
+        ctoi = {ch:i for i,ch in enumerate(chars)}
+        itoc = {i:ch for ch,i in ctoi.items()}
+        vocab_size = len(chars)
 
-        for word in words:
-            for ch1, ch2 in zip(word, word[1:]):
-                idx1 = ctoi[ch1]
-                idx2 = ctoi[ch2]
-                counts_tensor[idx1, idx2] += 1
-
-        # bigram model
-        smoothed_counts_tensor = (counts_tensor + 1)
-
-        normalized_counts_tensor = smoothed_counts_tensor/ smoothed_counts_tensor.sum(1, keepdim=True)
+        block_size = 5
 
         x, y = [], []
 
         for word in words:
-            for ch1, ch2 in zip(word, word[1:]):
-                idx1 = ctoi[ch1]
-                idx2 = ctoi[ch2]
-                x.append(idx1)
-                y.append(idx2)
+            context = [ctoi["."]] * block_size
+            for ch in word:
+                idx = ctoi[ch]
+                x.append(context)
+                y.append(idx)
+                context = context[1:] + [idx]
         X = torch.tensor(x)
         Y = torch.tensor(y)
-        num = X.nelement()
+        num = X.shape[0]
 
+        embed_dim = 10
+        hidden1 = 100
+        hidden2 = 100
         gen = torch.Generator().manual_seed(2147483647)
+        embd = torch.randn((vocab_size, embed_dim), generator=gen, requires_grad=True)
 
-        W = torch.randn((85, 85), generator=gen, requires_grad=True)
-        enc_x = F.one_hot(X, num_classes=85).float()
-        logits = enc_x @ W
-        counts = logits.exp()
-        prob = counts/counts.sum(1, keepdim=True)
-        loss = -prob[torch.arange(num), Y].log().mean() + 0.01*(W**2).mean()
+        W1 = torch.randn((block_size * embed_dim, hidden1), generator=gen, requires_grad=True)
+        B1 = torch.zeros(hidden1, requires_grad=True)
 
-        lre = torch.linspace(-3, 0, 1000)
-        lrs = 10 ** lre
+        W2 = torch.randn((hidden1, hidden2), generator=gen, requires_grad=True)
+        B2 = torch.zeros(hidden2, requires_grad=True)
 
-        lri = []
-        lossi = []
-        print("line 106")
-        for i in range(10):
-            enc_x = F.one_hot(X, num_classes=85).float()
-            logits = enc_x @ W
-            counts = logits.exp()
-            prob = counts/counts.sum(1, keepdim=True)
-            loss = -prob[torch.arange(num), Y].log().mean() + 0.01*(W**2).mean()
-                
-            loss.backward()
+        W3 = torch.randn((hidden2, vocab_size), generator=gen, requires_grad=True)
+        B3 = torch.zeros(vocab_size, requires_grad=True)
 
-            lr = lrs[i]
-            
-            # update parameters
-            W.data += -lr * W.grad
-                
-            # track
-            lri.append(lre[i])
-            lossi.append(loss.item())
+        parameters = [embd, W1, B1, W2, B2, W3, B3]
 
-        lossi_np = np.array(lossi)
-        min_idx = lossi_np.argmin()
-        min_loss = lossi_np[min_idx]
-        best_lre = lri[min_idx]
-        best_lr = 10 ** best_lre
-        print(f'best_ lr: {best_lr:.5f}')
+        lr = 0.01
+        steps = 5000
+        batch_size = 64
 
-        steps = 100
         for step in range(steps):
-            enc_x = F.one_hot(X, num_classes=85).float()
-            logits = enc_x @ W
-            counts = logits.exp()
-            prob = counts/counts.sum(1, keepdim=True)
-            loss = -prob[torch.arange(num), Y].log().mean() + 0.01*(W**2).mean()
-            
-            print(f'Step: {step}, Loss: {loss.item()}')
-            
-            W.grad = None
-            loss.backward()
-            W.data += -best_lr * W.grad
-            
-            ctoiFile = os.path.join(work_dir, "ctoi.txt")
-            with open(ctoiFile, "w") as f:
-                for c, i in ctoi.items():
-                    f.write(f"{repr(c)}\t{i}\n")
-            
-            itocFile = os.path.join(work_dir, "itoc.txt")
-            with open(itocFile, "w") as f:
-                for i, c in itoc.items():
-                    f.write(f"{i}\t{repr(c)}\n")
+            idx = torch.randint(0, X.shape[0], (batch_size,))
 
-            wFile = os.path.join(work_dir, "W.pt")
-            torch.save(W, wFile)
+            emb = embd[X[idx]]                 # (B, 3, 10)
+            h = emb.view(batch_size, -1)       # (B, 30)
+
+            h1 = torch.tanh(h @ W1 + B1)
+            h2 = torch.tanh(h1 @ W2 + B2)
+            logits = h2 @ W3 + B3
+
+            loss = F.cross_entropy(logits, Y[idx])
+
+            for p in parameters:
+                p.grad = None
+            loss.backward()
+
+            for p in parameters:
+                p.data += -lr * p.grad
+
+            if step % 250 == 0:
+                print(f"step {step} | loss {loss.item():.4f}")
+
+        torch.save({
+            "embd": embd,
+            "W1": W1, "B1": B1,
+            "W2": W2, "B2": B2,
+            "W3": W3, "B3": B3,
+            "ctoi": ctoi,
+            "itoc": itoc,
+            "block_size": block_size
+        }, os.path.join(work_dir, "model.pt"))
         
 
     def run_pred(self, data):
         # your code here
-        ctoiFile = os.path.join("work", "ctoi.txt")
-        ctoi = {}
+        checkpoint = torch.load(os.path.join("work", "model.pt"))
 
-        with open(ctoiFile, "r") as f:
-            for line in f:
-                c_repr, i = line.rstrip("\n").split("\t")
-                c = eval(c_repr)        # converts "'a'" → "a"
-                ctoi[c] = int(i)
-        
-        itocFile = os.path.join("work", "itoc.txt")
-        itoc = {}
-
-        with open(itocFile, "r") as f:
-            for line in f:
-                i_str, c_repr = line.rstrip("\n").split("\t")
-                i = int(i_str)
-                c = eval(c_repr)   # "'a'" → "a", "'\n'" → "\n"
-                itoc[i] = c
-        
-        W = torch.load("./work/W.pt")
+        embd = checkpoint["embd"]
+        W1, B1 = checkpoint["W1"], checkpoint["B1"]
+        W2, B2 = checkpoint["W2"], checkpoint["B2"]
+        W3, B3 = checkpoint["W3"], checkpoint["B3"]
+        ctoi = checkpoint["ctoi"]
+        itoc = checkpoint["itoc"]
+        block_size = checkpoint["block_size"]
 
         final_preds = []
-        lines = data
 
-        for line in lines:
+        for line in data:
             s = line.rstrip("\n")
             if len(s) == 0:
                 print("(empty line) -> can't predict")
+                final_preds.append("")
                 continue
 
-            last_ch = s[-1]
-            preds = self.top3_next_chars_from_last_char(last_ch, W, ctoi, itoc)
+            context = [ctoi["."]] * block_size
+            for ch in s[-block_size:]:
+                if ch in ctoi:
+                    context = context[1:] + [ctoi[ch]]
 
-            # Pretty print
+            x = torch.tensor([context])
+            emb = embd[x]                 # (1, block_size, embed_dim)
+            h = emb.view(1, -1)
+            h1 = torch.tanh(h @ W1 + B1)
+            h2 = torch.tanh(h1 @ W2 + B2)
+            logits = h2 @ W3 + B3
+            probs = F.softmax(logits, dim=1).squeeze(0)
+
+            top_probs, top_idx = torch.topk(probs, 3)
+            preds = [(itoc[i.item()], top_probs[j].item()) for j, i in enumerate(top_idx)]
+
+            final_preds.append("".join([ch for ch, _ in preds]))
+
             pred_str = ", ".join([f"'{ch}' ({p:.3f})" for ch, p in preds])
-            print(f"{s!r} | last='{last_ch}' -> top3: {pred_str}")
-
-            pred_str = "".join([f"{ch}" for ch, _ in preds])
-            final_preds.append(pred_str)
+            print(f"{s!r} -> top3: {pred_str}")
         return final_preds
 
     def save(self, work_dir):
