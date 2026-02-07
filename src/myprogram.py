@@ -55,7 +55,7 @@ class MyModel:
         itoc = {i:ch for ch,i in ctoi.items()}
         vocab_size = len(chars)
 
-        block_size = 5
+        block_size = 3
 
         x, y = [], []
 
@@ -124,9 +124,9 @@ class MyModel:
         }, os.path.join(work_dir, "model.pt"))
         
 
-    def run_pred(self, data):
+    def run_pred(self, data, work_dir):
         # your code here
-        checkpoint = torch.load(os.path.join("work", "model.pt"))
+        checkpoint = torch.load(os.path.join(work_dir, "model.pt"))
 
         embd = checkpoint["embd"]
         W1, B1 = checkpoint["W1"], checkpoint["B1"]
@@ -222,7 +222,7 @@ if __name__ == '__main__':
         print('Loading test data from {}'.format(args.test_data))
         test_data = MyModel.load_test_data(args.test_data)
         print('Making predictions')
-        pred = model.run_pred(test_data)
+        pred = model.run_pred(test_data, args.work_dir)
         print('Writing predictions to {}'.format(args.test_output))
         assert len(pred) == len(test_data), 'Expected {} predictions but got {}'.format(len(test_data), len(pred))
         model.write_pred(pred, args.test_output)
