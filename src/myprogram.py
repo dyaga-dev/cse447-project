@@ -16,30 +16,70 @@ class MyModel:
     
     @classmethod
     def load_training_data(cls, fname):
-        # your code here
-        # this particular model doesn't train
+        """
+        Backwards compatible:
+        - If fname is a file: read lines as before.
+        - If fname is a directory: read and concatenate all train_input_*.txt files inside.
+        """
         try:
             data = []
-            with open(fname) as f:
+            if os.path.isdir(fname):
+                # read all per-language training inputs
+                files = sorted([
+                    os.path.join(fname, fn)
+                    for fn in os.listdir(fname)
+                    if fn.startswith("train_input_") and fn.endswith(".txt")
+                ])
+                if not files:
+                    raise ValueError(f"No train_input_*.txt files found in directory: {fname}")
+
+                for fp in files:
+                    with open(fp, "r", encoding="utf-8", errors="replace") as f:
+                        for line in f:
+                            data.append(line.rstrip("\n"))
+                return data
+
+            # else: assume it's a single file path
+            with open(fname, "r", encoding="utf-8", errors="replace") as f:
                 for line in f:
-                    inp = line[:-1]  # the last character is a newline
-                    data.append(inp)
+                    data.append(line.rstrip("\n"))
             return data
+
         except Exception as e:
-            print("error in load_training_data: " + e)
+            print("error in load_training_data: " + str(e))
+            return []
 
     @classmethod
-    def load_test_data(cls, fname):
-        # your code here
-        try: 
-            data = []
-            with open(fname) as f:
-                for line in f:
-                    inp = line[:-1]  # the last character is a newline
-                    data.append(inp)
+    def load_test_data(cls, path):
+        """
+        Backwards compatible:
+        - If `path` is a file: read it (original grader behavior).
+        - If `path` is a directory: read and concatenate all test_input_*.txt inside.
+        (good for local multilingual testing)
+        """
+        data = []
+
+        # Directory case (your local testing)
+        if os.path.isdir(path):
+            files = sorted([
+                os.path.join(path, fn)
+                for fn in os.listdir(path)
+                if fn.startswith("test_input_") and fn.endswith(".txt")
+            ])
+            if not files:
+                raise ValueError(f"No test_input_*.txt files found in directory: {path}")
+
+            for fp in files:
+                with open(fp, "r", encoding="utf-8", errors="replace") as f:
+                    for line in f:
+                        data.append(line.rstrip("\n"))
             return data
-        except Exception as e:
-            print("error in load_test_data: " + e)
+
+        # File case (prof hidden test)
+        with open(path, "r", encoding="utf-8", errors="replace") as f:
+            for line in f:
+                data.append(line.rstrip("\n"))
+        return data
 
     @classmethod
     def write_pred(cls, preds, fname):
@@ -141,7 +181,7 @@ class MyModel:
     def run_pred(self, data, work_dir):
         # your code here
         try:
-            checkpoint = torch.load(os.path.join(work_dir, "model.pt"))
+            checkpoint = torch.load(os.path.join(work_dir, "model.pt"), map_location="cpu")
 
             embd = checkpoint["embd"]
             W1, B1 = checkpoint["W1"], checkpoint["B1"]
@@ -223,6 +263,8 @@ if __name__ == '__main__':
     parser.add_argument('--test_output', help='path to write test predictions', default='pred.txt')
     args = parser.parse_args()
 
+    # Prefer multilingual folder if present; fall back to original single-file training.
+    # train_data_file = 'multilingual_dataset' if os.path.isdir('multilingual_dataset') else 
     train_data_file = 'training_data/train_input.txt'
 
     random.seed(0)
