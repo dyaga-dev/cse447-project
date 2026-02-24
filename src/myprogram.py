@@ -15,15 +15,25 @@ class MyModel:
     """
     
     @classmethod
-    def load_training_data(cls, fname):
+    def load_training_data(cls, dpath):
         # your code here
         # this particular model doesn't train
         try:
             data = []
-            with open(fname) as f:
-                for line in f:
-                    inp = line[:-1]  # the last character is a newline
-                    data.append(inp)
+            if os.path.isdir(dpath):
+                for file in sorted(os.listdir(dpath)):
+                    path = os.path.join(dpath, file)
+                    with open(path, encoding = "utf-8") as f:
+                        for line in f:
+                            line = line.strip()
+                            if line:
+                                data.append(line)
+            else:
+                with open(dpath, encoding="utf-8") as f:
+                    for line in f:
+                        inp = line.strip()  # the last character is a newline
+                        data.append(inp)
+            random.shuffle(data)
             return data
         except Exception as e:
             print("error in load_training_data: " + e)
@@ -223,7 +233,8 @@ if __name__ == '__main__':
     parser.add_argument('--test_output', help='path to write test predictions', default='pred.txt')
     args = parser.parse_args()
 
-    train_data_file = 'training_data/train_input.txt'
+    train_data_dir = 'training_data'
+    test_data_dir = 'testing_data'
 
     random.seed(0)
 
@@ -234,12 +245,15 @@ if __name__ == '__main__':
         print('Instatiating model')
         model = MyModel()
         print('Loading training data')
-        train_data = MyModel.load_training_data(train_data_file)
+        train_data = MyModel.load_training_data(train_data_dir)
         print('Training')
         model.run_train(train_data, args.work_dir)
         print('Saving model')
         model.save(args.work_dir)
     elif args.mode == 'test':
+        if args.test_data == 'example/input.txt':
+            args.test_data = test_data_dir
+
         print('Loading model')
         model = MyModel.load(args.work_dir)
         print('Loading test data from {}'.format(args.test_data))
