@@ -7,7 +7,37 @@ import torch
 import numpy as np
 import torch.nn.functional as F
 import os
+import unicodedata
 
+def script_of(ch: str) -> str:
+        name = unicodedata.name(ch, "")
+        if "ARABIC" in name: return "ARABIC"
+        if "CYRILLIC" in name: return "CYRILLIC"
+        if "HANGUL" in name: return "HANGUL"
+        if "HIRAGANA" in name: return "HIRAGANA"
+        if "KATAKANA" in name: return "KATAKANA"
+        if "CJK UNIFIED" in name or "IDEOGRAPH" in name: return "HAN"
+        if "LATIN" in name: return "LATIN"
+        return "OTHER"
+
+def dominant_script(text: str) -> str:
+    counts = {}
+    for ch in text:
+        if ch.isspace(): 
+            continue
+        s = script_of(ch)
+        counts[s] = counts.get(s, 0) + 1
+    if not counts:
+        return "OTHER"
+    return max(counts, key=counts.get)
+
+def allowed_for_script(ch: str, script: str) -> bool:
+    # Always allow whitespace and basic punctuation
+    if ch.isspace():
+        return True
+    if unicodedata.category(ch).startswith("P"):  # punctuation
+        return True
+    return script_of(ch) == script
 
 class MyModel:
     """
@@ -265,7 +295,7 @@ if __name__ == '__main__':
 
     # Prefer multilingual folder if present; fall back to original single-file training.
     # train_data_file = 'multilingual_dataset' if os.path.isdir('multilingual_dataset') else 
-    train_data_file = 'training_data/train_input.txt'
+    train_data_file = 'multilingual_dataset/train_input_eng.txt'
 
     random.seed(0)
 
