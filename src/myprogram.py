@@ -7,7 +7,25 @@ import torch
 import numpy as np
 import torch.nn.functional as F
 import os
+import torch.nn as nn
+from collections import Counter
 
+# LSTM model suggested by Claude, reference: https://medium.com/data-science/language-modeling-with-lstms-in-pytorch-381a26badcbf
+class CharacterLSTM(nn.Module):
+    def __init__(self, vocab_size: int, embed_dim: int = 64,
+                 hidden_size: int = 256, num_layers: int = 2, dropout: float = 0.3):
+        super().__init__()
+        self.embedding  = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
+        self.lstm       = nn.LSTM(embed_dim, hidden_size, num_layers=num_layers, batch_first=True, dropout=dropout if num_layers > 1 else 0.0)
+        self.dropout    = nn.Dropout(dropout)
+        self.fc         = nn.Linear(hidden_size, vocab_size)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+      
+        emb     = self.dropout(self.embedding(x))  
+        out, _  = self.lstm(emb)                    
+        logits  = self.fc(out[:, -1, :])             
+        return logits
 
 class MyModel:
     """
@@ -45,7 +63,7 @@ class MyModel:
             data = []
             with open(fname) as f:
                 for line in f:
-                    inp = line[:-1]  # the last character is a newline
+                    inp = line.strip()  # the last character is a newline
                     data.append(inp)
             return data
         except Exception as e:
@@ -62,88 +80,85 @@ class MyModel:
 
     def run_train(self, data, work_dir):
         try:
-            words = [word for s in data for word in s.split()]
-            # word len : 171914
-            # min and max later
-
-            ctoi = {ch : i for i, ch in enumerate(sorted(set("".join(words))))}
-            itoc = {v:k for k, v in ctoi.items()}
-
-            chars = sorted(list(set("".join(words))))
-            if '.' in chars:
-                chars.remove('.')
-            chars = ['.'] + chars          # start / stop token
+            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            MIN_COUNT = 50
+            all_text = "\n".join(data)
+            char_counts = Counter(all_text)
+            keep = sorted(c for c, n in char_counts.items() if n >= MIN_COUNT)
+            if "." in keep:
+                keep.remove(".")
+        
+            chars = ['.'] + keep          # start token
             ctoi = {ch:i for i,ch in enumerate(chars)}
             itoc = {i:ch for ch,i in ctoi.items()}
             vocab_size = len(chars)
 
-            block_size = 3
+            block_size = 20
 
             x, y = [], []
+            PAD = ctoi["."]
 
-            for word in words:
-                context = [ctoi["."]] * block_size
-                for ch in word:
-                    idx = ctoi[ch]
-                    x.append(context)
-                    y.append(idx)
-                    context = context[1:] + [idx]
-            X = torch.tensor(x)
-            Y = torch.tensor(y)
-            num = X.shape[0]
+            for sentence in data:
+                encoded = [ctoi[ch] for ch in sentence if ch in ctoi]
+                if len(encoded) < 2:
+                    continue
 
-            embed_dim = 10
-            hidden1 = 100
-            hidden2 = 100
-            gen = torch.Generator().manual_seed(2147483647)
-            embd = torch.randn((vocab_size, embed_dim), generator=gen, requires_grad=True)
+                context = [PAD] * block_size + encoded
+                for i in range(block_size, len(context)):
+                    x.append(context[i - block_size : i])
+                    y.append(context[i])
+                    
+            X = torch.tensor(x, dtype = torch.long)
+            Y = torch.tensor(y, dtype = torch.long)
+            
 
-            W1 = torch.randn((block_size * embed_dim, hidden1), generator=gen, requires_grad=True)
-            B1 = torch.zeros(hidden1, requires_grad=True)
+            embed_dim = 64
+            hidden_size = 512
+            num_layers = 2
+            dropout = 0.3
+            model = CharacterLSTM(vocab_size, embed_dim, hidden_size, num_layers, dropout)
+            model.to(device)
 
-            W2 = torch.randn((hidden1, hidden2), generator=gen, requires_grad=True)
-            B2 = torch.zeros(hidden2, requires_grad=True)
+            optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
+            # Halve LR every 10 000 steps suggested by claude
+            scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10_000, gamma=0.5)
 
-            W3 = torch.randn((hidden2, vocab_size), generator=gen, requires_grad=True)
-            B3 = torch.zeros(vocab_size, requires_grad=True)
-
-            parameters = [embd, W1, B1, W2, B2, W3, B3]
-
-            lr = 0.01
-            steps = 5000
-            batch_size = 64
+            batch_size = 256
+            steps = 50_000
+            n = X.shape[0]
+            model.train()
 
             for step in range(steps):
-                idx = torch.randint(0, X.shape[0], (batch_size,))
+                idx  = torch.randint(0, n, (batch_size,))
+                xb   = X[idx].to(device)
+                yb   = Y[idx].to(device)
 
-                emb = embd[X[idx]]                 # (B, 3, 10)
-                h = emb.view(batch_size, -1)       # (B, 30)
+                logits = model(xb)
+                loss   = F.cross_entropy(logits, yb)
 
-                h1 = torch.tanh(h @ W1 + B1)
-                h2 = torch.tanh(h1 @ W2 + B2)
-                logits = h2 @ W3 + B3
-
-                loss = F.cross_entropy(logits, Y[idx])
-
-                for p in parameters:
-                    p.grad = None
+                optimizer.zero_grad()
                 loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+                optimizer.step()
+                scheduler.step()
 
-                for p in parameters:
-                    p.data += -lr * p.grad
 
                 if step % 250 == 0:
                     print(f"step {step} | loss {loss.item():.4f}")
-            print(itoc)
+            os.makedirs(work_dir, exist_ok=True)
             torch.save({
-                "embd": embd,
-                "W1": W1, "B1": B1,
-                "W2": W2, "B2": B2,
-                "W3": W3, "B3": B3,
-                "ctoi": ctoi,
-                "itoc": itoc,
-                "block_size": block_size
+                "model_state": model.state_dict(),
+                "ctoi":        ctoi,
+                "itoc":        itoc,
+                "block_size":  block_size,
+                "embed_dim":   embed_dim,
+                "hidden_size": hidden_size,
+                "num_layers":  num_layers,
+                "dropout":     dropout,
+                "vocab_size":  vocab_size,
             }, os.path.join(work_dir, "model.pt"))
+            print("Model saved to", work_dir)
+
         except Exception as e:
             print("error in run_test: " + e)
         
@@ -151,17 +166,46 @@ class MyModel:
     def run_pred(self, data, work_dir):
         # your code here
         try:
-            checkpoint = torch.load(os.path.join(work_dir, "model.pt"))
+            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-            embd = checkpoint["embd"]
-            W1, B1 = checkpoint["W1"], checkpoint["B1"]
-            W2, B2 = checkpoint["W2"], checkpoint["B2"]
-            W3, B3 = checkpoint["W3"], checkpoint["B3"]
-            ctoi = checkpoint["ctoi"]
-            itoc = checkpoint["itoc"]
+            checkpoint = torch.load(os.path.join(work_dir, "model.pt"), map_location =device)
+
+            ctoi       = checkpoint["ctoi"]
+            itoc       = checkpoint["itoc"]
             block_size = checkpoint["block_size"]
+            vocab_size = checkpoint["vocab_size"]
 
-            final_preds = []
+            model = CharacterLSTM(
+                vocab_size  = vocab_size,
+                embed_dim   = checkpoint["embed_dim"],
+                hidden_size = checkpoint["hidden_size"],
+                num_layers  = checkpoint["num_layers"],
+                dropout     = checkpoint["dropout"],
+            )
+            model.load_state_dict(checkpoint["model_state"])
+            model.to(device)
+            model.eval()
+            PAD = ctoi["."]
+            batch_size = 128
+
+            final_preds = [""]*len(data)
+
+            # preprocess data first
+            contexts = []
+            for line in data:
+                s = line.rstrip("\n")
+                if not s:
+                    contexts.append(None)
+                    continue
+                ctx = [PAD] * block_size
+                for ch in s[-block_size:]:
+                    if ch in ctoi:
+                        ctx = ctx[1:] + [ctoi[ch]]
+                    else:
+                        ctx = ctx[1:] + [PAD]
+                contexts.append(ctx)
+            indices = [i for i, c in enumerate(contexts) if c is not None]
+
             for line in data:
                 s = line.rstrip("\n")
                 if len(s) == 0:
@@ -174,21 +218,22 @@ class MyModel:
                     if ch in ctoi:
                         context = context[1:] + [ctoi[ch]]
 
-                x = torch.tensor([context])
-                emb = embd[x]                 # (1, block_size, embed_dim)
-                h = emb.view(1, -1)
-                h1 = torch.tanh(h @ W1 + B1)
-                h2 = torch.tanh(h1 @ W2 + B2)
-                logits = h2 @ W3 + B3
-                probs = F.softmax(logits, dim=1).squeeze(0)
+                for batch_start in range(0, len(indices), batch_size):
+                    batch_idx = indices[batch_start : batch_start + batch_size]
+                    x_b = torch.tensor(
+                        [contexts[i] for i in batch_idx], dtype=torch.long
+                    ).to(device)
 
-                top_probs, top_idx = torch.topk(probs, 3)
-                preds = [(itoc[i.item()], top_probs[j].item()) for j, i in enumerate(top_idx)]
+                    with torch.no_grad():
+                        logits = model(x_b)                     
+                        probs  = F.softmax(logits, dim=-1)          
 
-                final_preds.append("".join([ch for ch, _ in preds]))
+                    top_probs, top_idx = torch.topk(probs, 3, dim=-1) 
 
-                pred_str = ", ".join([f"'{ch}' ({p:.3f})" for ch, p in preds])
-                print(f"{s!r} -> top3: {pred_str}")
+                    for j, orig_i in enumerate(batch_idx):
+                        chars = "".join(itoc[idx.item()] for idx in top_idx[j])
+                        final_preds[orig_i] = chars
+
             return final_preds
         except Exception as e:
             print("error in run_test: " + e)
@@ -234,7 +279,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     train_data_dir = 'training_data'
-    test_data_dir = 'testing_data'
+    test_data_file = 'testing_data/all_test_input.txt'
 
     random.seed(0)
 
@@ -252,7 +297,7 @@ if __name__ == '__main__':
         model.save(args.work_dir)
     elif args.mode == 'test':
         if args.test_data == 'example/input.txt':
-            args.test_data = test_data_dir
+            args.test_data = test_data_file
 
         print('Loading model')
         model = MyModel.load(args.work_dir)
