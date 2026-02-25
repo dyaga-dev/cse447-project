@@ -1,0 +1,72 @@
+Tri-gram stats (checkpoint 2 code):
+
+---
+
+python3 src/myprogram.py train --work_dir work
+Making working directory work
+Instatiating model
+Loading training data
+Training
+step 0 | loss 21.2380
+step 250 | loss 13.5846
+step 500 | loss 10.8989
+step 750 | loss 12.3396
+step 1000 | loss 9.0587
+step 1250 | loss 10.2910
+step 1500 | loss 6.5775
+step 1750 | loss 5.8292
+step 2000 | loss 6.8782
+step 2250 | loss 6.3933
+step 2500 | loss 6.1811
+step 2750 | loss 6.0892
+step 3000 | loss 6.4029
+step 3250 | loss 5.8111
+step 3500 | loss 5.6884
+step 3750 | loss 6.6826
+step 4000 | loss 6.4452
+step 4250 | loss 5.9064
+step 4500 | loss 4.4405
+step 4750 | loss 4.6986
+{0: '.', 1: '!', 2: '"', 3: '#', 4: '$', 5: '&', 6: "'", 7: '(', 8: ')', 9: '*', 10: ',', 11: '-', 12: '/', 13: '0', 14: '1', 15: '2', 16: '3', 17: '4', 18: '5', 19: '6', 20: '7', 21: '8', 22: '9', 23: ':', 24: ';', 25: '=', 26: '?', 27: 'A', 28: 'B', 29: 'C', 30: 'D', 31: 'E', 32: 'F', 33: 'G', 34: 'H', 35: 'I', 36: 'J', 37: 'K', 38: 'L', 39: 'M', 40: 'N', 41: 'O', 42: 'P', 43: 'Q', 44: 'R', 45: 'S', 46: 'T', 47: 'U', 48: 'V', 49: 'W', 50: 'X', 51: 'Y', 52: 'Z', 53: '[', 54: ']', 55: 'a', 56: 'b', 57: 'c', 58: 'd', 59: 'e', 60: 'f', 61: 'g', 62: 'h', 63: 'i', 64: 'j', 65: 'k', 66: 'l', 67: 'm', 68: 'n', 69: 'o', 70: 'p', 71: 'q', 72: 'r', 73: 's', 74: 't', 75: 'u', 76: 'v', 77: 'w', 78: 'x', 79: 'y', 80: 'z', 81: 'ê', 82: '’', 83: '♪', 84: '♫'}
+Saving model
+
+---
+
+python3 src/myprogram.py test --work_dir work --test_data example/input.txt --test_output pred.txt
+Loading model
+Loading test data from example/input.txt
+Making predictions
+'Happ' -> top3: 'l' (0.760), 'e' (0.178), '[' (0.033)
+'Happy Ne' -> top3: '#' (0.880), 'g' (0.087), '*' (0.010)
+'Happy New Yea' -> top3: 'e' (0.391), 'A' (0.319), '9' (0.112)
+'That’s one small ste' -> top3: 'd' (0.360), 't' (0.268), 'r' (0.178)
+'That’s one sm' -> top3: '3' (0.308), 'a' (0.296), 'i' (0.197)
+'That’' -> top3: 's' (0.984), '(' (0.007), 'l' (0.006)
+'Th' -> top3: 'e' (0.734), 'i' (0.204), 'a' (0.040)
+'one giant leap for mankin' -> top3: 'd' (0.576), 't' (0.176), 'g' (0.163)
+'one giant leap fo' -> top3: 'r' (0.757), 'o' (0.194), 'n' (0.023)
+'one giant lea' -> top3: 't' (0.224), 's' (0.208), '=' (0.124)
+'one giant l' -> top3: 'r' (0.999), 't' (0.001), 'p' (0.000)
+'one gia' -> top3: 's' (0.998), 'o' (0.001), 'r' (0.000)
+'on' -> top3: 'e' (0.891), 'c' (0.029), 'I' (0.023)
+'ragú' -> top3: 'a' (0.548), 'I' (0.143), '3' (0.095)
+Writing predictions to pred.txt
+
+---
+
+python3 grader/grade.py pred.txt example/answer.txt --verbose
+Input 0: wrong, y is not in in le[
+Input 1: wrong, w is not in in #g*
+Input 2: wrong, r is not in in ea9
+Input 3: wrong, p is not in in dtr
+Input 4: right, a is in in 3ai
+Input 5: right, s is in in s(l
+Input 6: right, a is in in eia
+Input 7: right, d is in in dtg
+Input 8: right, r is in in ron
+Input 9: wrong, p is not in in ts=
+Input 10: wrong, e is not in in rtp
+Input 11: wrong, n is not in in sor
+Input 12: right, e is in in eci
+Input 13: right,  is in in ai3
+Success rate: 0.5
