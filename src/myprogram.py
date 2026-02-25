@@ -81,10 +81,10 @@ class MyModel:
     def run_train(self, data, work_dir):
         try:
             device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-            #MIN_COUNT = 50
+            MIN_COUNT = 5 # suggested by claude to reduce softmax operations 
             all_text = "\n".join(data)
-            #char_counts = Counter(all_text)
-            keep = sorted(set(all_text))
+            char_counts = Counter(all_text)
+            keep = sorted(c for c, n in char_counts.items() if n >= MIN_COUNT)
             if "." in keep:
                 keep.remove(".")
         
@@ -92,7 +92,7 @@ class MyModel:
             ctoi = {ch:i for i,ch in enumerate(chars)}
             itoc = {i:ch for ch,i in ctoi.items()}
             vocab_size = len(chars)
-
+            print(ctoi)
             block_size = 20
 
             x, y = [], []
@@ -110,7 +110,6 @@ class MyModel:
                     
             X = torch.tensor(x, dtype = torch.long)
             Y = torch.tensor(y, dtype = torch.long)
-            
 
             embed_dim = 64
             hidden_size = 512
@@ -124,10 +123,13 @@ class MyModel:
             scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10_000, gamma=0.5)
 
             batch_size = 256
-            steps = 50_000
+            steps = 5000
             n = X.shape[0]
             model.train()
-
+            print(f"\n{'─'*68}")
+            print(f"  Steps: {steps:,} | Batch: {batch_size} | "
+                  f"Vocab: {vocab_size:,} | Examples: {n:,}")
+            print(f"{'─'*68}\n")
             for step in range(steps):
                 idx  = torch.randint(0, n, (batch_size,))
                 xb   = X[idx].to(device)
@@ -141,8 +143,6 @@ class MyModel:
                 torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                 optimizer.step()
                 scheduler.step()
-
-
                 if step % 250 == 0:
                     print(f"step {step} | loss {loss.item():.4f}")
             os.makedirs(work_dir, exist_ok=True)
@@ -265,7 +265,7 @@ if __name__ == '__main__':
     parser.add_argument('--test_output', help='path to write test predictions', default='pred.txt')
     args = parser.parse_args()
 
-    train_data_dir = 'training_data'
+    train_data_dir = 'multilingual_dataset'
     test_data_file = 'testing_data/all_test_input.txt'
 
     random.seed(0)
