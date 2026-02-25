@@ -83,34 +83,162 @@ class MyModel:
 
     @classmethod
     def write_pred(cls, preds, fname):
-        try: 
+        try:
+            os.makedirs(os.path.dirname(fname), exist_ok=True)
             with open(fname, 'wt') as f:
                 for p in preds:
-                    f.write('{}\n'.format(p))
+                    f.write(f"{p}\n")
         except Exception as e:
-            print("error in write_pred: " + e)
+            print("error in write_pred:", e)
+
+    # def run_train(self, data, work_dir):
+    #     try:
+    #         words = [word for s in data for word in s.split()]
+    #         # word len : 171914
+    #         # min and max later
+
+    #         ctoi = {ch : i for i, ch in enumerate(sorted(set("".join(words))))}
+    #         itoc = {v:k for k, v in ctoi.items()}
+
+    #         chars = sorted(list(set("".join(words))))
+    #         if '.' in chars:
+    #             chars.remove('.')
+    #         chars = ['.'] + chars          # start / stop token
+    #         ctoi = {ch:i for i,ch in enumerate(chars)}
+    #         itoc = {i:ch for ch,i in ctoi.items()}
+    #         vocab_size = len(chars)
+
+    #         block_size = 3
+
+    #         x, y = [], []
+
+    #         for word in words:
+    #             context = [ctoi["."]] * block_size
+    #             for ch in word:
+    #                 idx = ctoi[ch]
+    #                 x.append(context)
+    #                 y.append(idx)
+    #                 context = context[1:] + [idx]
+    #         X = torch.tensor(x)
+    #         Y = torch.tensor(y)
+    #         num = X.shape[0]
+
+    #         embed_dim = 10
+    #         hidden1 = 100
+    #         hidden2 = 100
+    #         gen = torch.Generator().manual_seed(2147483647)
+    #         embd = torch.randn((vocab_size, embed_dim), generator=gen, requires_grad=True)
+
+    #         W1 = torch.randn((block_size * embed_dim, hidden1), generator=gen, requires_grad=True)
+    #         B1 = torch.zeros(hidden1, requires_grad=True)
+
+    #         W2 = torch.randn((hidden1, hidden2), generator=gen, requires_grad=True)
+    #         B2 = torch.zeros(hidden2, requires_grad=True)
+
+    #         W3 = torch.randn((hidden2, vocab_size), generator=gen, requires_grad=True)
+    #         B3 = torch.zeros(vocab_size, requires_grad=True)
+
+    #         parameters = [embd, W1, B1, W2, B2, W3, B3]
+
+    #         lr = 0.01
+    #         steps = 5000
+    #         batch_size = 64
+
+    #         for step in range(steps):
+    #             idx = torch.randint(0, X.shape[0], (batch_size,))
+
+    #             emb = embd[X[idx]]                 # (B, 3, 10)
+    #             h = emb.view(batch_size, -1)       # (B, 30)
+
+    #             h1 = torch.tanh(h @ W1 + B1)
+    #             h2 = torch.tanh(h1 @ W2 + B2)
+    #             logits = h2 @ W3 + B3
+
+    #             loss = F.cross_entropy(logits, Y[idx])
+
+    #             for p in parameters:
+    #                 p.grad = None
+    #             loss.backward()
+
+    #             for p in parameters:
+    #                 p.data += -lr * p.grad
+
+    #             if step % 250 == 0:
+    #                 print(f"step {step} | loss {loss.item():.4f}")
+    #         # print(itoc)
+    #         torch.save({
+    #             "embd": embd,
+    #             "W1": W1, "B1": B1,
+    #             "W2": W2, "B2": B2,
+    #             "W3": W3, "B3": B3,
+    #             "ctoi": ctoi,
+    #             "itoc": itoc,
+    #             "block_size": block_size
+    #         }, os.path.join(work_dir, "model.pt"))
+    #     except Exception as e:
+    #         print("error in run_test: " + e)
+        
+
+    # def run_pred(self, data, work_dir):
+    #     # your code here
+    #     try:
+    #         checkpoint = torch.load(os.path.join(work_dir, "model.pt"), map_location="cpu")
+
+    #         embd = checkpoint["embd"]
+    #         W1, B1 = checkpoint["W1"], checkpoint["B1"]
+    #         W2, B2 = checkpoint["W2"], checkpoint["B2"]
+    #         W3, B3 = checkpoint["W3"], checkpoint["B3"]
+    #         ctoi = checkpoint["ctoi"]
+    #         itoc = checkpoint["itoc"]
+    #         block_size = checkpoint["block_size"]
+
+    #         final_preds = []
+    #         for line in data:
+    #             s = line.rstrip("\n")
+    #             if len(s) == 0:
+    #                 print("(empty line) -> can't predict")
+    #                 final_preds.append("")
+    #                 continue
+                
+    #             context = [ctoi["."]] * block_size
+    #             for ch in s[-block_size:]:
+    #                 if ch in ctoi:
+    #                     context = context[1:] + [ctoi[ch]]
+
+    #             x = torch.tensor([context])
+    #             emb = embd[x]                 # (1, block_size, embed_dim)
+    #             h = emb.view(1, -1)
+    #             h1 = torch.tanh(h @ W1 + B1)
+    #             h2 = torch.tanh(h1 @ W2 + B2)
+    #             logits = h2 @ W3 + B3
+    #             probs = F.softmax(logits, dim=1).squeeze(0)
+
+    #             top_probs, top_idx = torch.topk(probs, 3)
+    #             preds = [(itoc[i.item()], top_probs[j].item()) for j, i in enumerate(top_idx)]
+
+    #             final_preds.append("".join([ch for ch, _ in preds]))
+
+    #             pred_str = ", ".join([f"'{ch}' ({p:.3f})" for ch, p in preds])
+    #             print(f"{s!r} -> top3: {pred_str}")
+    #         return final_preds
+    #     except Exception as e:
+    #         print("error in run_test: " + e)
 
     def run_train(self, data, work_dir):
         try:
             words = [word for s in data for word in s.split()]
-            # word len : 171914
-            # min and max later
 
-            ctoi = {ch : i for i, ch in enumerate(sorted(set("".join(words))))}
-            itoc = {v:k for k, v in ctoi.items()}
-
+            # --- neural net setup unchanged ---
             chars = sorted(list(set("".join(words))))
             if '.' in chars:
                 chars.remove('.')
-            chars = ['.'] + chars          # start / stop token
+            chars = ['.'] + chars
             ctoi = {ch:i for i,ch in enumerate(chars)}
             itoc = {i:ch for ch,i in ctoi.items()}
             vocab_size = len(chars)
-
-            block_size = 15
+            block_size = 3
 
             x, y = [], []
-
             for word in words:
                 context = [ctoi["."]] * block_size
                 for ch in word:
@@ -120,108 +248,122 @@ class MyModel:
                     context = context[1:] + [idx]
             X = torch.tensor(x)
             Y = torch.tensor(y)
-            num = X.shape[0]
 
             embed_dim = 10
-            hidden1 = 100
-            hidden2 = 100
+            hidden1, hidden2 = 100, 100
             gen = torch.Generator().manual_seed(2147483647)
             embd = torch.randn((vocab_size, embed_dim), generator=gen, requires_grad=True)
-
-            W1 = torch.randn((block_size * embed_dim, hidden1), generator=gen, requires_grad=True)
+            W1 = torch.randn((block_size*embed_dim, hidden1), generator=gen, requires_grad=True)
             B1 = torch.zeros(hidden1, requires_grad=True)
-
             W2 = torch.randn((hidden1, hidden2), generator=gen, requires_grad=True)
             B2 = torch.zeros(hidden2, requires_grad=True)
-
             W3 = torch.randn((hidden2, vocab_size), generator=gen, requires_grad=True)
             B3 = torch.zeros(vocab_size, requires_grad=True)
-
             parameters = [embd, W1, B1, W2, B2, W3, B3]
 
-            lr = 0.01
-            steps = 5000
-            batch_size = 64
+            lr, steps, batch_size = 0.01, 5000, 64
 
             for step in range(steps):
                 idx = torch.randint(0, X.shape[0], (batch_size,))
-
-                emb = embd[X[idx]]                 # (B, 3, 10)
-                h = emb.view(batch_size, -1)       # (B, 30)
-
+                emb = embd[X[idx]]
+                h = emb.view(batch_size, -1)
                 h1 = torch.tanh(h @ W1 + B1)
                 h2 = torch.tanh(h1 @ W2 + B2)
                 logits = h2 @ W3 + B3
-
                 loss = F.cross_entropy(logits, Y[idx])
-
                 for p in parameters:
                     p.grad = None
                 loss.backward()
-
                 for p in parameters:
                     p.data += -lr * p.grad
-
                 if step % 250 == 0:
                     print(f"step {step} | loss {loss.item():.4f}")
-            print(itoc)
+
+            # --- build n-gram counts for Kneser-Ney ---
+            ngram_counts, context_counts = self._build_ngram_counts(words, block_size)
             torch.save({
-                "embd": embd,
-                "W1": W1, "B1": B1,
-                "W2": W2, "B2": B2,
-                "W3": W3, "B3": B3,
-                "ctoi": ctoi,
-                "itoc": itoc,
-                "block_size": block_size
+                "embd": embd, "W1": W1, "B1": B1, "W2": W2, "B2": B2, "W3": W3, "B3": B3,
+                "ctoi": ctoi, "itoc": itoc, "block_size": block_size,
+                "ngram_counts": ngram_counts, "context_counts": context_counts
             }, os.path.join(work_dir, "model.pt"))
         except Exception as e:
-            print("error in run_test: " + e)
-        
+            print("error in run_train:", e)
+
+    def _build_ngram_counts(self, words, n):
+        """Build n-gram counts for Kneser-Ney."""
+        ngram_counts = {}
+        context_counts = {}
+        for word in words:
+            padded = ['.']*n + list(word)
+            for i in range(n, len(padded)):
+                ctx = tuple(padded[i-n:i])
+                ch = padded[i]
+                ngram_counts[(ctx, ch)] = ngram_counts.get((ctx, ch), 0) + 1
+                context_counts[ctx] = context_counts.get(ctx, 0) + 1
+        return ngram_counts, context_counts
+
+    def _kneser_ney_prob(self, context, ch, ngram_counts, context_counts, discount=0.75):
+        """Compute P_KN(ch | context) using Kneser-Ney smoothing."""
+        if context in context_counts and (context, ch) in ngram_counts:
+            count = ngram_counts[(context, ch)]
+            total = context_counts[context]
+            return max(count - discount, 0)/total
+        elif context in context_counts:
+            # back-off weight
+            return discount * len([c for (ctx, c) in ngram_counts if ctx==context])/context_counts[context] * 1e-6
+        else:
+            # unseen context
+            return 1e-6
 
     def run_pred(self, data, work_dir):
-        # your code here
         try:
             checkpoint = torch.load(os.path.join(work_dir, "model.pt"), map_location="cpu")
-
             embd = checkpoint["embd"]
             W1, B1 = checkpoint["W1"], checkpoint["B1"]
             W2, B2 = checkpoint["W2"], checkpoint["B2"]
             W3, B3 = checkpoint["W3"], checkpoint["B3"]
-            ctoi = checkpoint["ctoi"]
-            itoc = checkpoint["itoc"]
+            ctoi, itoc = checkpoint["ctoi"], checkpoint["itoc"]
             block_size = checkpoint["block_size"]
+            ngram_counts = checkpoint["ngram_counts"]
+            context_counts = checkpoint["context_counts"]
 
             final_preds = []
             for line in data:
                 s = line.rstrip("\n")
                 if len(s) == 0:
-                    print("(empty line) -> can't predict")
                     final_preds.append("")
                     continue
-                
                 context = [ctoi["."]] * block_size
                 for ch in s[-block_size:]:
                     if ch in ctoi:
                         context = context[1:] + [ctoi[ch]]
-
                 x = torch.tensor([context])
-                emb = embd[x]                 # (1, block_size, embed_dim)
+                emb = embd[x]
                 h = emb.view(1, -1)
                 h1 = torch.tanh(h @ W1 + B1)
                 h2 = torch.tanh(h1 @ W2 + B2)
                 logits = h2 @ W3 + B3
                 probs = F.softmax(logits, dim=1).squeeze(0)
 
-                top_probs, top_idx = torch.topk(probs, 3)
-                preds = [(itoc[i.item()], top_probs[j].item()) for j, i in enumerate(top_idx)]
+                # --- integrate Kneser-Ney fallback ---
+                kn_probs = []
+                for i in range(len(probs)):
+                    ch_i = itoc[i]
+                    kn_prob = self._kneser_ney_prob(tuple(context), ch_i, ngram_counts, context_counts)
+                    kn_probs.append(kn_prob)
+                kn_probs = torch.tensor(kn_probs)
+                final_probs = probs + 0.1*kn_probs  # small weight for KN smoothing
+                final_probs /= final_probs.sum()
 
+                top_probs, top_idx = torch.topk(final_probs, 3)
+                preds = [(itoc[i.item()], top_probs[j].item()) for j, i in enumerate(top_idx)]
                 final_preds.append("".join([ch for ch, _ in preds]))
 
                 pred_str = ", ".join([f"'{ch}' ({p:.3f})" for ch, p in preds])
                 print(f"{s!r} -> top3: {pred_str}")
             return final_preds
         except Exception as e:
-            print("error in run_test: " + e)
+            print("error in run_pred:", e)
 
     def save(self, work_dir):
         try:
@@ -265,7 +407,7 @@ if __name__ == '__main__':
 
     # Prefer multilingual folder if present; fall back to original single-file training.
     # train_data_file = 'multilingual_dataset' if os.path.isdir('multilingual_dataset') else 
-    train_data_file = 'training_data/train_input.txt'
+    train_data_file = 'multilingual_dataset' if os.path.isdir('multilingual_dataset') else 'multilingual_dataset/train_input_eng.txt'
 
     random.seed(0)
 
