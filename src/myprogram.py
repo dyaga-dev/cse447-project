@@ -107,7 +107,7 @@ class MyModel:
             itoc = {i:ch for ch,i in ctoi.items()}
             vocab_size = len(chars)
 
-            block_size = 3
+            block_size = 15
 
             x, y = [], []
 
