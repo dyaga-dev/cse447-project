@@ -81,10 +81,10 @@ class MyModel:
     def run_train(self, data, work_dir):
         try:
             device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-            MIN_COUNT = 50
+            #MIN_COUNT = 50
             all_text = "\n".join(data)
-            char_counts = Counter(all_text)
-            keep = sorted(c for c, n in char_counts.items() if n >= MIN_COUNT)
+            #char_counts = Counter(all_text)
+            keep = sorted(set(all_text))
             if "." in keep:
                 keep.remove(".")
         
@@ -193,7 +193,7 @@ class MyModel:
             # preprocess data first
             contexts = []
             for line in data:
-                s = line.rstrip("\n")
+                s = line.strip()
                 if not s:
                     contexts.append(None)
                     continue
@@ -206,33 +206,20 @@ class MyModel:
                 contexts.append(ctx)
             indices = [i for i, c in enumerate(contexts) if c is not None]
 
-            for line in data:
-                s = line.rstrip("\n")
-                if len(s) == 0:
-                    print("(empty line) -> can't predict")
-                    final_preds.append("")
-                    continue
-                
-                context = [ctoi["."]] * block_size
-                for ch in s[-block_size:]:
-                    if ch in ctoi:
-                        context = context[1:] + [ctoi[ch]]
+            
+            for batch_start in range(0, len(indices), batch_size):
+                batch_idx = indices[batch_start : batch_start + batch_size]
+                x_b = torch.tensor([contexts[i] for i in batch_idx], dtype=torch.long).to(device)
 
-                for batch_start in range(0, len(indices), batch_size):
-                    batch_idx = indices[batch_start : batch_start + batch_size]
-                    x_b = torch.tensor(
-                        [contexts[i] for i in batch_idx], dtype=torch.long
-                    ).to(device)
+                with torch.no_grad():
+                    logits = model(x_b)                     
+                    probs  = F.softmax(logits, dim=-1)          
 
-                    with torch.no_grad():
-                        logits = model(x_b)                     
-                        probs  = F.softmax(logits, dim=-1)          
+                top_probs, top_idx = torch.topk(probs, 3, dim=-1) 
 
-                    top_probs, top_idx = torch.topk(probs, 3, dim=-1) 
-
-                    for j, orig_i in enumerate(batch_idx):
-                        chars = "".join(itoc[idx.item()] for idx in top_idx[j])
-                        final_preds[orig_i] = chars
+                for j, orig_i in enumerate(batch_idx):
+                    chars = "".join(itoc[idx.item()] for idx in top_idx[j])
+                    final_preds[orig_i] = chars
 
             return final_preds
         except Exception as e:
