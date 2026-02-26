@@ -1,0 +1,5000 @@
+t, a, o
+t, a, o
+t, a, o
+n, t, r
+e, r, l
+e, s, i
+t, v, s
+t, a, o
+ , s, e
+ , s, i
+t, a, o
+t, a, o
+u, n, r
+ , e, i
+e, i, a
+ , r, n
+e, i, a
+t, a, o
+h, i, e
+h, s, e
+g,  , e
+n, r, f
+e,  , a
+n, t, c
+t, a, o
+n, t, r
+t, a, o
+g,  , e
+n, t, c
+e, i, a
+t, v, s
+e,  , h
+ , r, n
+e, i, a
+ , s, e
+l, s, e
+r, t, s
+ , t, e
+t, a, o
+h, s, e
+t, a, o
+n, r, f
+e, i, a
+t, v, s
+n, t, r
+ , a, o
+ , t, e
+t, a, o
+e, i,  
+ , s, i
+t, e, a
+n, v, s
+t, a, o
+ , y, e
+t, a, o
+e,  , n
+t, a, o
+t, n, l
+n, c, t
+ , e, i
+e, i, a
+d, r, s
+n, t, r
+e, h, a
+h, i, e
+ , s, e
+n, t, c
+ , s, t
+l, e, a
+n, e, s
+t, a, o
+d,  , c
+t, a, o
+a, e, r
+g,  , e
+a, e, i
+e, h, a
+e, h, a
+t, v, s
+r, u, n
+ , s, ,
+e, a, i
+t, a, o
+s,  , a
+e, i, a
+t, a, o
+n, r, f
+l, e, a
+r, d, s
+ , t, e
+d, r, s
+e, t, y
+e, a, o
+h, i, e
+n, t, c
+t, I, h
+r, n, t
+t, a, o
+v,  , o
+ , s, e
+ , t, e
+t, a, o
+t, a, o
+ , y, e
+d, r, s
+t, e, a
+t, a, o
+h, o, a
+ , r, n
+h, i, e
+o, n, c
+n, r, f
+t, I, h
+a, e, r
+r, d, s
+ , s, e
+ , ,, .
+t, a, o
+y, i, f
+n, t, r
+t, a, o
+n, d, p
+i, o, a
+ , t, e
+d, r, s
+l, e, y
+t, a, o
+r, g, t
+n, r, f
+l, e, y
+l, e, y
+ , s, e
+d, r, s
+h, i, e
+ , t, e
+e, a, o
+h, s, e
+t, a, o
+h, i, e
+d,  , c
+ , ,, .
+t, e, a
+h, i, e
+h, i, e
+h, i, e
+t, a, o
+e, r, l
+e, a, o
+e, a, o
+n, r, f
+t, a, o
+ , t, e
+d,  , w
+g,  , e
+ , t, e
+e, s, i
+t, l, n
+ , s, e
+ , n, o
+n, t, c
+t, a, o
+h, s, e
+ , r, n
+h, o, a
+ , ,, .
+ , s, e
+e, i, a
+t, e, a
+e, a, o
+ , s, ,
+ , t, e
+t, a, o
+e, i,  
+n, t, r
+t, a, o
+t, a, o
+e, r, l
+ , s, t
+e, i, a
+ , r, n
+n, t, c
+e, a, r
+t, a, o
+t, a, o
+e, a, o
+a, e, i
+ , s, i
+e, a, i
+ , s, e
+ , t, e
+e,  , i
+n, m, p
+t, c, e
+r, n, o
+t, a, o
+e, a, i
+ , t, e
+s, c, n
+d,  , g
+t,  , d
+e, i,  
+g,  , e
+i, a, e
+e, a, i
+e, r, l
+ , ,, .
+r, d, n
+t, a, o
+e, a, o
+l, e, y
+ , n, o
+t, I, h
+t, a, o
+ , t, e
+ , s, ,
+h, e, i
+ , n, o
+ , e, t
+t, a, o
+ , r, n
+t, I, h
+ , s, e
+t, a, o
+t, a, o
+a, e, i
+ , ,, .
+h, i, e
+ , s, e
+n, t, c
+ , t, e
+e, a, o
+h, i, e
+ , f, i
+ , a, o
+l, s, e
+l, n, t
+r, d, s
+ , a, o
+e, i, a
+ , ,, .
+e, r, l
+n, t, r
+h, i, e
+t, a, o
+t, a, o
+t, a, o
+t, w, r
+t,  , e
+t, c, e
+d,  , g
+ , s, e
+d,  , c
+n, t, r
+ , s, e
+t, v, s
+r,  , n
+ , t, e
+h, i, e
+e, h, a
+t, e, a
+ , d, r
+ , s, t
+e, r, l
+n, t, r
+ , t, e
+s,  , a
+ , s, d
+e, i, a
+e, a, o
+e, r, l
+t, l, n
+d, s,  
+n, c, t
+e, a, o
+r, d, n
+t, e, a
+e, r, l
+ , s, e
+d, s,  
+ , s, e
+t, a, o
+t, e, a
+d, r, s
+h, i, e
+n, s, l
+t, a, o
+n, r, f
+d,  , w
+t, a, o
+r, n, t
+ , s, ,
+h, i, e
+i, a, e
+n, r, f
+ , s, e
+h, i, e
+t, a, o
+ , s, e
+ , y, e
+ , e, i
+e,  , a
+t, a, o
+ , s, ,
+ , t, e
+t, a, o
+ , n, o
+n, t, r
+t, a, o
+ , s, e
+e, h, a
+t, a, o
+ , d, n
+e, a, o
+ , t, e
+t, a, o
+e, a, o
+n, m, r
+h, i, e
+ , d, n
+n, m, p
+r, d, n
+o, n, c
+n, t, c
+ , s, t
+e,  , h
+a, e, u
+ , e, i
+t,  , d
+t, a, o
+t, a, o
+t, a, o
+e, i, a
+e, i, a
+ , s, e
+l, e, y
+t, a, o
+t, a, o
+n, t, r
+e, i,  
+ , e, i
+ , ,, .
+ , s, d
+ , s, e
+l, e, y
+t, a, o
+ , t, e
+t, a, o
+e, i, a
+n, d, p
+e, t, y
+r, d, s
+h, i, e
+t, l, i
+t, a, b
+n, t, g
+ , s, d
+a, e, i
+r, u, c
+e,  , h
+e, t, y
+d, s,  
+n, t, g
+e, a, o
+t, a, o
+t, a, o
+ , e, i
+a, s, r
+ , e, i
+ , t, e
+t, e, a
+t, a, o
+h, i, e
+n, t, r
+n, t, c
+ , e, i
+d, s,  
+ , d, n
+e,  , h
+e,  , i
+e, i, a
+t, a, o
+n, d, t
+e, h, a
+e, h, a
+g,  , e
+n, t, c
+t, a, o
+ , ,, .
+ , s, t
+n, m, r
+r, d, n
+n, m, r
+g,  , e
+ , t, e
+h, i, e
+n, t, c
+n, t, r
+t, a, o
+ , s, e
+t, e, a
+e, i, a
+ , e, i
+ , t, e
+e,  , a
+l, e, y
+d, s,  
+ , s, d
+n, t, r
+a, e, i
+ , s, e
+e, i, a
+d, e, i
+y, i, f
+e, i,  
+ , e, i
+r, n, o
+e, r, l
+ , d, r
+n, t, r
+d,  , w
+ , l, n
+l, s, e
+n, v, s
+e, i, a
+d, n, s
+e, a, i
+h, i, e
+n, u, n
+l, e, a
+n, e, s
+t, s, n
+h, i, e
+n, t, r
+n, t, g
+t, a, o
+e, h, a
+e,  , h
+t, a, o
+t, a, o
+o, n, c
+ , y, e
+t, a, o
+n, m, r
+e, a, o
+ , ,, .
+g,  , e
+ , r, n
+e,  , a
+e, t, y
+a, e, r
+t, a, o
+t, v, s
+e, s, b
+e, t, y
+r, d, s
+n, s, l
+t, a, o
+h, i, e
+t, a, o
+e, a, o
+h, s, e
+t, a, o
+r, d, s
+t, a, o
+ , t, e
+h, s, e
+d,  , w
+o, n, c
+t, a, o
+ , s, e
+d,  , c
+t, a, o
+n, t, r
+n, t, r
+ , a, o
+g,  , e
+e, i, a
+ , t, e
+t, a, o
+t, s, n
+a, e, r
+e,  , h
+d,  , c
+ , n, c
+t, a, o
+ , e, i
+ , s, e
+a, e, i
+h, s, e
+t, a, o
+e, t, y
+t, e, a
+e,  , n
+ , r, n
+ , e, i
+ , e, i
+e, s, i
+a, e, i
+t, a, o
+t, a, o
+t, l, n
+t, a, o
+n, r, f
+h, i, e
+ , ,, .
+t, v, s
+ , l, n
+r, n, t
+d, s,  
+e, h, a
+l, e, y
+t, v, s
+ , t, e
+t, l, i
+t, a, o
+t, a, o
+a, e, r
+ , s, e
+ , r, n
+n, t, r
+ , t, e
+ , t, e
+ , a, o
+r, d, s
+ , e, i
+n, t, c
+h, s, e
+t, a, o
+ , e, i
+n, t, r
+t, a, o
+ , s, i
+n, r, f
+e,  , h
+e, s, i
+l, n, t
+d,  , g
+l, e, y
+ , s, t
+d, s,  
+ , t, e
+r, d, s
+r, g, t
+a, e, r
+ , s, e
+e, a, o
+d,  , c
+n, m, r
+ , t, e
+a, e, r
+t, a, o
+r, d, s
+r, d, n
+l, e, y
+t, a, o
+t, a, o
+ , s, e
+n, t, c
+ , s, i
+t, a, o
+n, t, c
+s, c, n
+e, s, i
+t, I, h
+d, s,  
+g,  , e
+h, i, e
+e, a, i
+t, a, o
+s, c, n
+t, e, a
+t, l, i
+t, a, o
+e, s, i
+e, r, l
+n, r, f
+t, a, o
+t, a, o
+t, a, o
+n, m, r
+ , a, o
+e, i, a
+h, e,  
+t, a, o
+n, c, t
+ , e, t
+ , s, e
+n, c, t
+ , s, i
+a, e, i
+t, a, o
+l, n, t
+n, r, f
+ , r, n
+ , s, e
+e, s, i
+n, t, r
+a, e, i
+e, s, i
+d,  , g
+e, a, i
+n, t, r
+a, e, i
+a, e, i
+ , s, e
+a, i, e
+e, i, a
+t, a, o
+a, e, r
+n, t, g
+r,  , n
+n, r, f
+t, a, o
+t, a, o
+d,  , g
+l, e, y
+n, w,  
+e, h, a
+t, a, o
+r, d, s
+t, a, o
+ , ,, .
+ , d, n
+e,  , i
+e, h, a
+e, s, i
+a, e, r
+ , p, o
+r, g, t
+t, a, o
+d,  , r
+e, a, o
+e, i, a
+e, a, o
+t, a, o
+t, a, o
+ , s, e
+r, d, s
+e, h, a
+ , l, n
+o, e, i
+r, n, t
+t, r, s
+e, a, o
+o, n, c
+ , t, e
+t,  , d
+h, i, e
+t, I, h
+e, r, l
+d,  , r
+n, m, p
+e, i, a
+n, t, c
+t, a, o
+n, t, r
+t, r, s
+ , d, n
+a, e, u
+l, s, e
+g,  , e
+t, a, o
+ , t, e
+ , s, e
+ , r, n
+t, I, h
+t, a, o
+t, c, e
+t, a, o
+e, i, a
+n, t, r
+e, a, r
+e, a, i
+h, i, e
+d, s,  
+ , s, e
+r, d, s
+e,  , h
+e,  , a
+t, p, e
+t, a, o
+n, r, f
+e, h, a
+t, a, o
+t, a, o
+n, t, c
+ , s, d
+d,  , w
+e,  , n
+r, d, n
+l, e, y
+ , s, ,
+ , n, o
+n, t, r
+ , a, o
+e, r, l
+e, i, a
+t, a, o
+e, i,  
+e, i, a
+e, r, l
+ , a, o
+ , e, i
+t, a, o
+t, a, o
+e, a, o
+t, a, o
+t, a, o
+t, a, o
+u, n, r
+d,  , g
+ , s, t
+l, o, i
+n, t, r
+n, t, r
+ , d, n
+ , n, o
+t, a, o
+t, a, o
+g,  , e
+d,  , c
+t, a, o
+r, u, c
+h, e, i
+o, e, i
+ , a, o
+t, a, o
+ , s, e
+e, a, o
+e,  , i
+t, a, o
+ , e, i
+t, a, o
+a, e, u
+t, v, s
+ , s, ,
+e, h, a
+t, a, o
+ , s, ,
+t, a, o
+ , t, e
+e,  , h
+ , t, e
+ , t, e
+h, e, i
+o, e, i
+t, a, o
+t, a, o
+e,  , h
+l, e, a
+ , t, e
+e,  , i
+t, a, o
+t, a, o
+t, a, o
+ , t, e
+t, e, a
+t, a, o
+r,  , n
+t, l, i
+e, i, a
+ , s, e
+t, a, o
+ , s, t
+t, a, o
+e, i, a
+ , s, e
+n, t, c
+l, e, a
+t, a, o
+n, r, f
+d,  , w
+t, a, o
+ , ,, .
+n, m, r
+t, a, o
+t, a, o
+g,  , e
+h, i, e
+e, i, a
+t, a, o
+ , t, e
+k, d, l
+ , e, i
+ , e, i
+n, l, t
+ , s, e
+ , r, n
+r, n, o
+ , l, n
+ , s, d
+ , s, t
+l, e, y
+t, l, i
+t, a, o
+ , t, e
+r, g, t
+d, s,  
+d,  , w
+ , ,, .
+n, t, r
+u, i, e
+s, c, n
+e, i, a
+r, u, c
+t, a, o
+t, a, o
+ , ,, .
+e, i, a
+l, e, y
+n, c, k
+t, a, o
+t, a, o
+a, e, u
+t, a, o
+ , e, i
+n, d, t
+ , ,, .
+n, t, r
+s, c, n
+ , s, e
+d, s,  
+h, e,  
+n, t, r
+n, t, r
+l, e, y
+l, e, y
+t, a, o
+e, i, a
+h, i, e
+r, g, t
+i, a, e
+ , ,, .
+e, i, a
+ , e, t
+d,  , g
+r, d, s
+d,  , g
+t, a, o
+e, i, a
+t, a, o
+t, a, o
+ , s, e
+l, s, e
+e, a, o
+t, a, o
+ , e, i
+d, r, s
+d, r, s
+a, e, i
+r, d, n
+r, n, t
+ , s, i
+t, a, o
+ , ,, .
+l, o, i
+ , t, e
+l, n, t
+t, I, h
+d, r, s
+e, a, i
+e,  , h
+e, s, i
+n, s, l
+n, t, c
+n, m, r
+e, i, a
+r, u, n
+ , t, e
+r, n, t
+h, i, e
+a, e, o
+ , s, ,
+t, a, o
+o, e, i
+ , t, e
+ , ,, .
+ , t, e
+n, r, f
+n, t, r
+t, a, o
+h, i, e
+e, s, i
+t, a, o
+l, s, e
+ , t, e
+e,  , h
+ , s, e
+t, v, s
+e, i, a
+l, e, y
+e, r, l
+n, m, r
+ , ,, i
+ , s, e
+t, a, o
+ , t, e
+h, s, e
+d,  , g
+ , a, o
+t, a, o
+ , l, n
+s, c, n
+ , ,, .
+n, t, c
+t, a, o
+t, a, o
+t, a, b
+ , ,, .
+ , s, ,
+t, c, e
+t, I, h
+d,  , r
+ , ,, .
+t, e, a
+t, a, o
+d,  , g
+h, i, e
+e, s, b
+r, g, t
+h, i, e
+n, d, t
+n, u, n
+g,  , e
+l, e, y
+ , t, e
+e, i, a
+ , s, d
+ , a, o
+e, i, a
+ , s, e
+ , d, r
+ , s, t
+t, a, o
+n, t, c
+t, a, o
+t, v, s
+a, s, r
+l, s, e
+t, a, o
+h, i, e
+t, a, o
+ , s, e
+l, e, a
+e, s, i
+d,  , w
+r, t, l
+r, d, s
+d, s,  
+e, s, i
+ , s, e
+l, e, y
+t, a, o
+e, h, a
+e, h, a
+l, s, e
+ , ,, .
+t, r, s
+e, i, a
+ , d, r
+a, s, r
+t, a, o
+n, e, s
+r, t, l
+e, i, a
+ , s, ,
+ , s, e
+ , r, n
+r, d, s
+t, a, o
+ , t, e
+ , t, e
+n, u, n
+ , t, e
+e,  , n
+t, a, o
+s, t, v
+ , s, ,
+ , t, e
+n, t, g
+h, i, e
+n, u, n
+ , t, e
+t, a, o
+t, a, o
+h, i, e
+n, d, t
+ , s, i
+n, t, c
+ , r, n
+e,  , a
+t, a, b
+ , s, i
+h, e,  
+t, a, o
+e, i, a
+t,  , d
+t, a, o
+ , s, e
+t, a, o
+g,  , e
+ , t, e
+e,  , h
+e, a, i
+e,  , h
+t, a, o
+t, a, o
+ , t, e
+d, e, i
+t, a, o
+e, i, a
+n, t, c
+t,  , d
+r, g, t
+d,  , c
+l, r, s
+g,  , e
+n, t, r
+e, i, a
+a, e, i
+ , ,, .
+ , s, e
+d,  , w
+t, a, o
+t, a, o
+e, a, i
+ , s, e
+t, a, o
+r, g, t
+t, a, o
+ , s, e
+h, i, e
+l, e, y
+ , T, A
+r, t, l
+t, a, o
+r, d, s
+l, e, y
+n, r, f
+e, a, i
+ , s, i
+d, s,  
+t,  , d
+ , n, o
+s,  , a
+d,  , r
+r, n, t
+r, u, c
+t, a, o
+n, t, c
+ , t, e
+i, a, e
+ , t, e
+t, a, o
+t, a, o
+n, r, f
+l, n, t
+e,  , i
+e, i,  
+o, n, c
+n, t, r
+e, h, a
+e, i,  
+e, h, a
+ , r, n
+g,  , e
+n, t, g
+t, a, o
+ , s, t
+u, n, r
+n, t, c
+a, e, u
+e, i, a
+n, t, c
+ , s, e
+e, r, l
+t, a, o
+h, i, e
+ , n, c
+d,  , c
+ , ,, .
+a, s, r
+t, a, o
+ , t, e
+l, e, y
+ , s, i
+e, a, i
+n, t, r
+ , d, n
+l, r, t
+ , s, e
+l, r, t
+t, a, o
+ , ,, .
+t, a, o
+d,  , c
+r,  , n
+ , s, d
+ , s, t
+ , s, t
+t, a, o
+ , t, e
+g,  , e
+e, a, i
+ , s, d
+t, a, o
+k, d, l
+ , ,, i
+ , s, ,
+t, a, o
+t, a, o
+ , ,, .
+n, t, r
+ , s, ,
+s,  , a
+t, a, o
+t, a, o
+l, r, s
+ , y, e
+g, s, n
+t, a, o
+ , ,, .
+h, i, e
+a, e, o
+e, r, l
+ , t, e
+a, e, i
+d,  , w
+ , ,, .
+t, a, o
+t, a, o
+t, e, a
+e, r, l
+t, a, o
+t, a, o
+r, d, s
+n, r, f
+ , a, o
+t, a, o
+e, i, a
+e, i, a
+t, a, o
+h, i, e
+d, s,  
+r, d, s
+t, a, o
+r, n, s
+e, s, i
+h, e, i
+t, a, o
+e,  , i
+ , s, ,
+t, a, o
+t, a, o
+e, i, a
+t, a, o
+n, m, p
+ , e, i
+t, w, r
+ , ,, .
+t, a, o
+t, n, l
+o, n, c
+t, a, o
+t, a, o
+t, a, o
+h, i, e
+ , s, t
+e, a, i
+l, e, a
+t, a, o
+ , e, i
+a, s, r
+ , d, n
+t, a, o
+t, a, b
+e, h, a
+ , s, ,
+t, a, o
+n, m, p
+t, a, o
+ , s, d
+ , n, o
+d, r, s
+t, l, d
+n, t, c
+ , l, n
+e,  , h
+d,  , g
+t, a, o
+ , s, e
+a, e, r
+e, a, i
+n, t, r
+n, d, t
+t, a, o
+r, d, s
+a, e, i
+k, d, l
+d, r, s
+n, u, n
+d, r, s
+t, l, i
+ , d, s
+l, n, t
+n, t, c
+l, e, y
+h, s, e
+r, d, n
+ , t, e
+n, r, f
+r, d, s
+ , a, o
+h, i, e
+ , s, e
+t, a, o
+ , d, r
+n, t, r
+ , ,, .
+e, i, a
+n, t, r
+e, i, a
+r, g, t
+e, i,  
+t, a, o
+h, s, e
+t, a, o
+t, a, o
+ , ,, .
+e, i, a
+ , s, d
+g,  , e
+ , s, e
+ , e, i
+d, r, s
+n, t, r
+ , t, e
+n, d, t
+e, i, a
+ , t, e
+ , r, n
+e,  , i
+h, i, e
+h, i, e
+n, m, r
+t, a, o
+l, e, y
+t, a, o
+n, t, r
+e,  , i
+n, t, r
+e, h, a
+t, a, o
+n, e, s
+d, r, s
+i, a, o
+e, a, i
+e, a, o
+a, e, i
+ , l, n
+ , s, d
+n, c, t
+ , e, i
+h, i, e
+l, e, a
+n, u, n
+t, a, o
+r, d, s
+ , s, e
+t, a, o
+r, g, t
+t, a, o
+ , s, d
+t, e, a
+d,  , w
+t, a, o
+ , l, n
+n, t, r
+e, i, a
+t,  , d
+a, e, r
+e, t, y
+e, a, o
+ , s, e
+n, t, c
+ , s, e
+e, i, a
+ , t, e
+a, e, u
+u, a, o
+t, e, a
+ , s, d
+d,  , g
+n, c, t
+t, a, o
+h, i, e
+t, e, a
+d, r, s
+t, a, o
+n, e, s
+a, e, r
+l, e, y
+g,  , e
+n, r, f
+ , s, e
+t, a, o
+n, r, f
+n, t, r
+ , s, e
+r, d, n
+t, a, o
+n, c, k
+ , e, i
+h, i, e
+g,  , e
+e, h, a
+r, n, t
+d,  , r
+h, i, e
+e, a, i
+l, e, y
+t, a, o
+ , t, e
+d, s,  
+i, a, e
+n, l, t
+e, h, a
+r, t, s
+t, a, o
+t, e, a
+n, r, f
+a, e, r
+n, r, f
+d,  , g
+h, i, e
+n, t, c
+n, s, l
+t, a, o
+n, c, k
+e, r, l
+e, i, a
+ , s, ,
+ , e, i
+n, r, f
+d,  , r
+n, t, r
+t, a, o
+h, i, e
+t, a, o
+n, s, l
+ , s, d
+n, t, r
+d,  , g
+e, i, a
+n, t, r
+ , s, ,
+ , e, i
+ , e, i
+e, i,  
+t, a, o
+a, e, i
+l, s, e
+h, o, a
+t, a, o
+t, a, o
+l, e, y
+n, m, r
+ , s, i
+t, a, o
+e, s, i
+d, s,  
+r,  , n
+o, e, i
+t, a, o
+h, s, e
+ , r, n
+i, a, e
+n, t, r
+h, i, e
+t, l, n
+n, t, c
+h, i, e
+ , e, i
+l, s, e
+o, n, c
+t, a, o
+t, a, o
+ , r, n
+t, a, o
+t, a, o
+ , r, n
+a, e, r
+n, t, c
+h, i, e
+n, d, t
+ , t, e
+ , a, o
+r, g, n
+e, r, l
+n, t, c
+d, s,  
+e, a, i
+r, g, n
+n, t, c
+ , r, n
+e, a, o
+e, a, i
+e, a, i
+ , ,, .
+t,  , d
+o, n, c
+h, s, e
+t, a, o
+ , d, n
+u, a, o
+t, a, o
+ , s, ,
+p, b, s
+n, s, a
+ , d, r
+e,  , n
+d,  , c
+t, c, e
+t, a, o
+g,  , e
+h, i, e
+e, t, y
+ , t, e
+t, a, o
+ , s, d
+r, n, t
+t, a, o
+ , s, d
+d, s,  
+ , ,, .
+e, a, o
+d, s,  
+e, i,  
+s, c, n
+ , e, i
+l, e, y
+t, e, a
+t, a, o
+h, s, e
+ , s, t
+r, n, t
+e, i, a
+d, s,  
+t, a, o
+t, a, o
+ , a, o
+g, s, n
+r, n, o
+e, h, a
+t, a, o
+h, i, e
+t, I, h
+s, t, v
+ , s, e
+h, i, e
+ , l, n
+ , s, e
+s, c, n
+d,  , g
+r, d, s
+ , l, n
+e, i,  
+t, a, o
+n, t, r
+e, i,  
+n, t, r
+l, e, y
+r, u, c
+ , t, e
+ , ,, .
+h, i, e
+e, i, a
+r, d, n
+t, a, o
+h, s, e
+t, a, o
+ , s, e
+r, d, n
+t, w, r
+e, i,  
+ , t, e
+ , e, i
+o, n, c
+t, a, o
+a, e, r
+e, a, i
+t, a, o
+t, a, o
+n, m, r
+h, i, e
+e,  , h
+ , s, e
+r, t, l
+ , d, r
+t, a, o
+e, t, y
+e,  , h
+t, l, d
+h, i, e
+n, t, c
+ , e, i
+d, s,  
+t,  , d
+e, h, a
+ , s, ,
+a, e, i
+ , s, t
+l, e, a
+n, t, c
+t, a, o
+t, a, o
+t, a, o
+h, s, e
+e, i, a
+o, e, i
+ , d, n
+t, a, o
+ , ,, .
+a, e, i
+n, r, f
+n, t, c
+r, d, s
+n, t, r
+ , t, e
+e, i, a
+t, a, o
+e, i, a
+t, a, o
+t, a, o
+ , p, o
+o, n, c
+ , s, d
+e, a, i
+h, i, e
+n, t, c
+y, i, f
+a, e, i
+t, a, o
+r, d, s
+t, a, o
+ , e, i
+i, a, e
+t, a, o
+n, t, c
+ , t, e
+l, e, a
+t, a, o
+t, a, o
+n, r, f
+n, t, c
+h, i, e
+n, t, c
+e, a, o
+r, d, n
+n, t, r
+e,  , a
+n, m, p
+g,  , e
+n, t, r
+r, u, c
+t, a, o
+n, t, r
+t, a, o
+l, s, e
+r, d, n
+a, e, r
+ , t, e
+r, n, o
+ , s, e
+t, w, r
+ , n, o
+t, a, o
+n, t, r
+h, i, e
+h, e, i
+e, i, a
+h, i, e
+d, s,  
+ , ,, .
+e, a, i
+ , d, r
+n, t, c
+n, t, r
+r, n, t
+o, n, c
+l, e, y
+t, v, s
+ , s, e
+r, n, t
+t, a, o
+ , s, e
+ , r, n
+n, t, r
+ , n, o
+l, e, a
+l, e, y
+ , s, i
+t, a, o
+t, c, e
+t, a, o
+n, w,  
+ , n, o
+e, a, o
+e,  , h
+n, c, k
+r, d, s
+t, l, n
+e, i, a
+e,  , i
+y, i, f
+t, e, a
+h, s, e
+e, s, i
+ , a, o
+t, a, o
+ , r, n
+ , t, e
+h, i, e
+r, d, s
+n, w,  
+ , ,, .
+ , s, e
+e,  , a
+ , t, e
+ , t, e
+h, i, e
+d, s,  
+e, h, a
+ , a, o
+t, a, o
+ , t, e
+ , e, i
+d,  , w
+ , t, e
+ , e, t
+ , t, e
+h, i, e
+ , s, e
+a, e, i
+e, i, a
+r,  , n
+ , t, e
+e, a, o
+l, e, y
+n, v, s
+t, a, o
+ , l, n
+r, d, s
+k, d, l
+d, s,  
+a, e, i
+n, e, s
+t, a, o
+ , s, e
+n, t, r
+g, s, n
+l, n, t
+r, d, n
+n, c, k
+n, r, f
+h, i, e
+ , s, e
+t, a, o
+e, a, i
+t, e, a
+ , ,, .
+t, a, o
+ , e, i
+a, e, i
+e, i, a
+e, i, a
+e, i, a
+ , s, ,
+e, a, o
+h, e, i
+r, g, t
+ , r, n
+e, s, i
+n, c, t
+ , t, e
+h, s, e
+ , s, t
+g,  , e
+r, d, s
+g,  , e
+ , s, e
+n, t, c
+t, v, s
+t, e, a
+ , a, o
+ , y, e
+t,  , d
+t, a, o
+ , s, e
+t, w, r
+e, r, l
+a, e, i
+l, e, y
+ , r, n
+e, i, a
+t, a, o
+d,  , c
+e, h, a
+ , n, o
+t, n, l
+t, a, o
+h, i, e
+ , a, o
+l, e, a
+ , t, e
+t, a, o
+n, r, f
+e, i, a
+u, a, o
+ , s, e
+e,  , h
+t, a, o
+ , a, o
+r, n, o
+t, a, o
+ , d, s
+t, v, s
+t, v, s
+t, e, a
+t, a, o
+l, e, y
+t, a, o
+ , d, n
+n, t, r
+e, t, y
+ , r, n
+y, i, f
+a, s, r
+l, s, e
+u, a, o
+e, a, i
+ , t, e
+e,  , n
+t, a, o
+e, a, i
+t, a, o
+d,  , r
+h, i, e
+n, v, s
+ , s, d
+s,  , a
+t, a, o
+t, a, o
+l, s, e
+t, a, o
+ , t, e
+ , t, e
+d, r, s
+ , a, o
+e, h, a
+d,  , g
+l, e, y
+t, a, o
+h, i, e
+t, a, o
+e, h, a
+g,  , e
+n, t, r
+ , t, e
+s,  , a
+e, a, o
+d, r, s
+n, t, r
+e,  , i
+d, r, s
+ , r, n
+a, e, u
+n, t, c
+t, e, a
+h, i, e
+e, s, i
+ , n, o
+o, n, c
+ , ,, .
+ , d, s
+e, a, i
+t, a, o
+e, a, i
+n, t, r
+t, a, o
+l, e, y
+t, a, o
+ , a, o
+e,  , h
+ , d, s
+e, h, a
+t, a, o
+o, n, c
+a, e, r
+t, a, o
+a, e, o
+n, d, p
+g,  , e
+e, r, l
+h, i, e
+ , d, r
+e, a, o
+n, t, r
+ , e, i
+ , y, e
+d,  , g
+e, i, a
+e, s, i
+ , s, ,
+t, a, o
+t, a, o
+t, a, o
+l, e, a
+ , s, e
+t, a, o
+d,  , g
+n, r, f
+n, d, p
+t, a, o
+h, i, e
+l, r, s
+d, r, s
+t, a, o
+e, i, a
+d,  , c
+h, i, e
+ , s, e
+t, a, o
+t, a, o
+ , s, e
+ , n, o
+t, a, o
+e, r, l
+e, h, a
+n, t, r
+n, m, r
+ , ,, .
+r, d, s
+t,  , d
+e, i, a
+r, d, s
+t, p, e
+o, n, c
+t, I, h
+ , s, i
+ , t, e
+ , d, n
+n, t, r
+r, g, n
+t, a, o
+a, e, i
+t, a, o
+r, g, t
+n, s, a
+r, n, t
+t, a, o
+ , l, n
+ , t, e
+s,  , a
+n, t, r
+t, a, o
+t, c, e
+ , s, e
+ , s, e
+t, r, s
+ , y, e
+ , t, e
+ , n, o
+t,  , d
+ , s, e
+n, t, r
+ , t, e
+u, a, o
+l, s, e
+s, c, n
+ , l, n
+e,  , a
+n, m, r
+i, a, e
+ , e, i
+r, g, t
+h, s, e
+d,  , c
+ , s, ,
+e, a, i
+t, a, o
+e, i, a
+v,  , o
+t, a, o
+n, t, r
+t, e, a
+e, i,  
+e, r, l
+e, i, a
+e, i, a
+t, a, o
+h, s, e
+ , l, n
+n, t, c
+e, a, o
+n, d, p
+t, l, n
+d, r, s
+ , a, o
+ , p, o
+d,  , c
+d, s,  
+n, t, r
+e, i,  
+n, r, f
+t, a, o
+ , l, n
+ , s, i
+e, i, a
+t, a, o
+n, c, k
+ , r, n
+e, i, a
+t, l, n
+g,  , e
+t, a, o
+n, t, r
+g,  , e
+t, a, o
+ , n, o
+n, d, p
+t, p, e
+ , t, e
+h, i, e
+t, a, o
+i, o, a
+a, e, i
+n, t, c
+e,  , i
+h, i, e
+e, i, a
+ , n, c
+n, t, r
+e, i, a
+l, e, a
+ , s, e
+r, d, s
+e, t, y
+n, t, c
+r, d, n
+a, t, f
+t, a, o
+d, e, i
+d,  , g
+e, r, l
+ , d, r
+e, a, o
+l, e, y
+r,  , n
+ , d, n
+n, t, r
+ , s, t
+n, c, k
+t, a, o
+t, a, o
+n, t, c
+ , t, e
+ , s, d
+t, a, o
+r,  , n
+g, s, n
+ , s, e
+h, i, e
+e, i, a
+t, l, i
+ , s, e
+d, n, s
+e, i, a
+a, e, r
+n, t, c
+ , s, e
+r, t, s
+t, a, o
+t, c, e
+t, n, l
+n, t, r
+t, a, o
+t, a, o
+r, d, n
+n, t, r
+e, i, a
+g,  , e
+h, i, e
+e, s, i
+d,  , c
+n, r, f
+e, i, a
+t, a, o
+e, i, a
+e, r, l
+ , s, i
+h, e,  
+ , r, n
+n, t, r
+t, a, o
+d, r, s
+e, i, a
+ , s, e
+h, i, e
+l, e, y
+o, n, c
+d, s,  
+l, e, a
+e,  , i
+ , r, n
+t, I, h
+g,  , e
+r, n, t
+ , t, e
+ , t, e
+t, a, o
+e, r, l
+e, a, o
+t, a, o
+h, i, e
+ , t, e
+s,  , a
+ , s, e
+t, a, o
+t, a, o
+ , s, t
+ , s, ,
+ , a, o
+ , s, e
+t, a, o
+a, e, o
+ , s, e
+e, s, i
+t, a, o
+ , t, e
+t,  , e
+ , a, o
+t, a, o
+ , s, e
+ , t, e
+t, a, o
+h, i, e
+t, v, s
+d, e, i
+t, a, o
+n, s, l
+ , s, e
+n, s, l
+ , a, o
+l, r, t
+t, a, o
+ , e, i
+n, t, c
+r, n, t
+e, h, a
+a, e, r
+h, i, e
+d, n, s
+ , s, ,
+n, t, c
+h, i, e
+ , ,, .
+h, i, e
+n, c, k
+ , t, e
+ , t, e
+ , t, e
+d, s,  
+e, i, a
+t, a, o
+ , n, o
+ , r, n
+d, r, s
+ , t, e
+t, a, o
+ , s, t
+ , s, e
+d, s,  
+t, a, o
+ , n, o
+t, a, o
+e, a, i
+ , t, e
+t, a, o
+e, a, o
+e, a, o
+e, i, a
+l, s, e
+n, c, t
+n, t, r
+d,  , c
+t, r, s
+d,  , w
+h, i, e
+a, e, i
+l, e, y
+n, r, f
+e, s, i
+s, c, n
+ , f, i
+t, a, o
+n, t, c
+ , s, e
+n, t, r
+ , s, e
+e, r, l
+ , ,, .
+t,  , d
+ , t, e
+t, w, r
+ , t, e
+e, i, a
+g,  , e
+ , y, e
+n, m, p
+ , r, n
+t, a, o
+e, t, y
+ , t, e
+ , s, e
+e, a, o
+ , t, e
+n, t, c
+t, a, o
+d,  , c
+ , t, e
+ , t, e
+h, i, e
+n, t, c
+e, a, o
+t, e, a
+t, a, o
+t, v, s
+e, h, a
+t, l, n
+e, r, l
+a, e, r
+n, t, c
+d,  , c
+e, i, a
+t, a, o
+d,  , c
+t, a, o
+ , r, n
+ , s, ,
+ , r, n
+e, i, a
+e, a, o
+ , s, e
+t, v, s
+n, t, c
+ , t, e
+ , t, e
+ , r, n
+t, a, o
+d,  , r
+t, l, i
+t, e, a
+t, a, o
+t, r, s
+ , s, t
+e, i, a
+t, p, e
+n, t, r
+t, a, o
+t, a, o
+e, a, o
+t, a, o
+t, a, o
+t, e, a
+d,  , g
+e, i, a
+ , r, n
+t, I, h
+o, e, i
+ , r, n
+e, a, i
+ , t, e
+ , a, o
+t, a, o
+n, r, f
+t, a, o
+s,  , a
+h, e, i
+d,  , g
+s, c, n
+ , n, c
+ , s, t
+g,  , e
+n, t, c
+t, a, o
+a, i, e
+e, a, o
+h, i, e
+n, r, f
+r, u, n
+a, e, i
+n, t, r
+l, e, a
+t, a, o
+ , s, e
+e,  , i
+d, s,  
+n, t, c
+t, a, o
+e, a, o
+ , r, n
+e,  , i
+t, a, o
+e, i, a
+ , r, n
+a, e, o
+ , l, n
+ , r, n
+e, i, a
+h, i, e
+t, a, o
+t, n, l
+e, a, i
+h, i, e
+ , r, n
+e, a, i
+t, a, o
+n, r, f
+ , s, e
+e,  , i
+ , t, e
+ , s, e
+l, e, a
+ , y, e
+ , s, e
+t,  , d
+n, l, t
+s, c, n
+t, a, o
+t, a, o
+n, m, r
+t, r, s
+y, i, f
+n, t, r
+ , s, t
+e, i, a
+t, a, o
+ , t, e
+d, s,  
+h, i, e
+ , s, i
+l, s, e
+ , r, n
+ , r, n
+l, s, e
+ , e, i
+e, i, a
+n, r, f
+t, a, o
+e, i,  
+ , e, i
+n, t, c
+n, m, p
+r, n, t
+e, a, o
+e, a, o
+e, r, l
+l, n, t
+t, n, l
+l, s, e
+e, a, o
+l, s, e
+i, a, e
+e, t, y
+o, n, c
+g,  , e
+t,  , d
+n, t, r
+ , r, n
+e, r, l
+ , a, o
+t, a, o
+u, i, e
+ , s, ,
+t, a, o
+e, r, l
+h, i, e
+n, u, n
+h, i, e
+t, a, o
+t, a, o
+a, o, e
+e, s, i
+d, s,  
+h, i, e
+n, t, g
+e, a, i
+t, a, o
+l, e, y
+g,  , e
+e, a, o
+l, e, y
+n, r, f
+ , ,, .
+d, r, s
+o, n, c
+t, a, o
+t, e, a
+e, i, a
+r, t, l
+n, t, r
+ , e, t
+t, a, o
+n, t, c
+d, s,  
+t, a, o
+r, d, s
+t, a, o
+n, r, f
+l, e, y
+t, a, o
+ , e, t
+t, a, o
+t, a, o
+e, i,  
+n, r, f
+t,  , e
+t, a, o
+t, a, o
+h, i, e
+ , e, i
+t, a, o
+t, e, a
+r, n, o
+n, t, c
+r, n, t
+r, g, n
+t, n, l
+t, w, r
+t, a, o
+t, a, o
+ , s, e
+t, a, o
+t, a, o
+n, d, p
+r, d, s
+t, a, o
+r, n, o
+ , d, n
+ , d, r
+ , s, t
+e, t, y
+ , s, e
+t, n, l
+t, l, d
+e, a, o
+ , a, o
+s,  , a
+d, s,  
+ , s, e
+t, a, o
+n, t, c
+e, h, a
+ , ,, .
+e, h, a
+ , t, e
+n, r, f
+t, a, o
+l, e, a
+t, a, o
+ , e, t
+ , ,, .
+n, t, r
+h, i, e
+e,  , a
+n, t, r
+t, n, l
+n, r, f
+t, a, o
+t, a, o
+e, r, l
+r, u, c
+ , e, t
+t, a, o
+t, a, o
+t, a, o
+n, r, f
+ , s, e
+d, r, s
+e, l, p
+e, a, i
+h, i, e
+h, i, e
+e, r, l
+s, c, n
+ , s, ,
+ , r, n
+e, i, a
+e, i,  
+a, e, i
+e, a, o
+n, t, c
+r, d, n
+t, a, o
+e, r, l
+a, e, i
+n, v, s
+o, n, c
+ , l, n
+e, i,  
+t, c, e
+t, a, o
+ , ,, .
+n, r, f
+ , t, e
+ , s, e
+t, a, o
+t, a, o
+e,  , h
+d, r, s
+ , a, o
+l, e, a
+e, h, a
+l, n, t
+n, r, f
+t, a, o
+k, d, l
+ , s, e
+ , r, n
+l, e, y
+l, e, a
+t, v, s
+t, a, o
+l, e, y
+ , s, e
+e,  , a
+l, e, a
+ , e, i
+n, m, r
+r, d, s
+t, a, o
+d, r, s
+ , t, e
+ , t, e
+n, c, t
+t, v, s
+t, a, o
+ , s, d
+t, a, o
+ , d, n
+r, d, s
+ , e, t
+n, t, g
+t, a, o
+ , r, n
+e, t, y
+e, a, o
+d, s,  
+t, e, a
+ , s, ,
+a, e, i
+e, a, i
+n, l, t
+ , s, e
+t, e, a
+n, s, a
+t, a, o
+e, r, l
+ , t, e
+ , d, n
+ , s, t
+l, n, t
+t, a, o
+n, t, r
+t, a, o
+n, t, r
+e, a, o
+n, t, g
+h, i, e
+ , r, n
+d,  , g
+r, n, o
+ , ,, .
+t, a, o
+i, e, a
+t, a, o
+t, a, o
+n, u, n
+e, i, a
+ , y, e
+g,  , e
+y, i, f
+t, a, o
+ , s, e
+e,  , h
+g,  , e
+ , l, n
+r, d, s
+ , s, d
+t, a, o
+e, h, a
+n, t, c
+ , r, n
+t, a, o
+ , t, e
+n, t, r
+e, i, a
+n, u, n
+t, a, o
+t, a, o
+h, i, e
+n, v, s
+t, a, o
+e,  , a
+ , s, e
+d, s,  
+ , t, e
+n, t, r
+n, r, f
+t, a, o
+n, m, p
+v,  , o
+t,  , d
+d,  , r
+ , r, n
+d, r, s
+t, a, o
+ , s, e
+ , e, t
+t, a, o
+t, a, o
+e, r, l
+h, i, e
+ , s, t
+d, r, s
+ , t, e
+ , e, i
+d,  , c
+ , a, o
+ , d, s
+t, a, o
+ , r, n
+t, e, a
+t, a, o
+t, a, o
+y, i, f
+t, a, o
+r, u, n
+d, s,  
+ , s, d
+h, s, e
+d,  , c
+ , s, d
+ , d, r
+d, s,  
+n, u, n
+ , d, r
+s,  , a
+ , n, o
+n, e, s
+h, i, e
+e, a, i
+e, i, a
+a, e, i
+t, a, o
+d, s,  
+ , r, n
+t, a, o
+r, d, n
+ , d, n
+t, e, a
+n, t, r
+a, o, e
+ , a, o
+r, u, c
+e,  , h
+n, t, c
+t, a, o
+g,  , e
+e, a, o
+e, i, a
+t, a, o
+ , t, e
+n, t, r
+e, i, a
+ , d, s
+i, a, e
+e, i,  
+l, e, a
+r, g, t
+t, e, a
+n, m, p
+e, a, i
+e, i,  
+n, t, r
+o, e, a
+e, r, l
+e, i, a
+h, i, e
+y, i, f
+n, s, l
+n, r, f
+n, t, r
+r, n, t
+t, a, o
+ , ,, .
+n, r, f
+ , t, e
+ , e, i
+ , y, e
+ , d, n
+t, a, o
+n, r, f
+n, t, c
+t, a, o
+ , a, o
+t, a, o
+e, a, i
+t, a, o
+a, e, i
+ , y, e
+e, i, a
+ , y, e
+t, l, i
+t, a, o
+e, s, i
+n, c, t
+e, a, o
+ , e, i
+e, r, l
+ , t, e
+e, i, a
+t, a, b
+t, a, o
+e, h, a
+t, a, o
+h, e, i
+r, d, n
+n, r, f
+t,  , d
+h, e, i
+h, i, e
+t,  , d
+ , s, d
+ , t, e
+e,  , a
+t, a, o
+d,  , r
+ , t, e
+t, a, o
+ , ,, .
+t, a, o
+ , t, e
+n, t, r
+n, m, r
+e,  , n
+r, g, t
+e, a, i
+ , t, e
+a, e, i
+e, r, l
+t, a, o
+e, a, o
+ , r, n
+o, e, a
+t, a, o
+s, c, n
+ , a, o
+e, t, y
+t,  , d
+h, i, e
+n, t, r
+r, d, n
+n, r, f
+n, m, r
+e, h, a
+h, i, e
+e,  , a
+t, c, e
+n, t, r
+n, t, r
+h, i, e
+ , s, i
+o, e, a
+o, e, i
+ , s, d
+t, a, o
+e, i, a
+t, a, o
+ , s, e
+t, a, o
+ , t, e
+t, a, o
+n, t, c
+l, e, y
+ , s, e
+h, i, e
+t, a, o
+t,  , d
+d, r, s
+e, i, a
+r, n, t
+n, t, r
+e, r, l
+ , r, n
+t, a, o
+ , e, i
+ , s, e
+ , e, i
+e, i, a
+t, a, o
+t, a, o
+ , s, e
+ , e, i
+ , n, o
+h, i, e
+ , ,, .
+ , n, o
+s,  , a
+e, h, a
+l, e, y
+h, i, e
+h, e,  
+n, r, f
+ , d, r
+d, n, s
+e,  , h
+e,  , i
+d, s,  
+d, r, s
+d,  , c
+t, s, n
+ , ,, .
+t, a, o
+e, i, a
+t, a, o
+ , d, r
+ , t, e
+e, i, a
+ , n, c
+t, a, o
+r, g, t
+ , s, e
+l, r, t
+e, a, i
+t, a, o
+h, s, e
+t,  , d
+ , s, e
+u, n, r
+ , n, o
+ , s, t
+r, d, s
+ , ,, .
+t, a, o
+g,  , e
+t, n, l
+a, e, r
+t, a, o
+t, a, o
+ , d, n
+ , ,, .
+h, i, e
+n, t, c
+n, t, c
+d,  , c
+r, g, t
+t, a, o
+ , a, o
+l, s, e
+ , r, n
+t, a, o
+t, a, o
+e, a, o
+n, r, f
+d, r, s
+ , e, i
+ , t, e
+t, a, o
+t, s, n
+e, s, i
+y, i, f
+ , t, e
+t, a, o
+t, a, o
+n, s, l
+ , e, t
+l, n, t
+t,  , d
+e,  , a
+t, a, o
+t, a, o
+e, a, i
+e, i, a
+ , ,, .
+t, a, o
+t, a, o
+a, e, r
+e,  , h
+t, c, e
+n, t, r
+h, i, e
+t, c, e
+n, s, l
+d,  , c
+ , a, o
+ , e, i
+e, a, i
+e,  , n
+n, t, r
+d, s,  
+e, i,  
+r, d, s
+l, n, t
+e, i, a
+t, a, o
+t, a, o
+i, a, e
+h, i, e
+t, a, o
+ , s, d
+n, t, r
+l, n, t
+t, a, o
+l, e, a
+ , s, e
+l, e, a
+d, s,  
+t, a, o
+t, a, o
+t, a, o
+h, i, e
+y, i, f
+t,  , d
+e, h, a
+t, e, a
+o, e, i
+t, a, o
+h, i, e
+o, n, c
+t, e, a
+e, h, a
+t, a, o
+e,  , a
+e, a, i
+r, u, c
+d,  , r
+ , e, i
+e, a, i
+a, e, r
+h, i, e
+t, a, o
+l, e, a
+ , ,, .
+ , s, d
+r, d, s
+e, r, l
+ , s, d
+ , a, o
+n, t, c
+ , r, n
+t, a, o
+t, a, o
+ , s, e
+d, r, s
+h, i, e
+h, i, e
+n, m, r
+n, r, f
+d,  , w
+e, a, i
+t, a, o
+l, n, t
+n, t, c
+t, a, o
+ , ,, .
+ , r, n
+ , a, o
+l, s, e
+e, i,  
+ , ,, .
+d, s,  
+t, a, o
+g,  , e
+t, a, o
+n, r, f
+g,  , e
+t, a, o
+ , s, i
+t, a, o
+l, s, e
+e, i,  
+t, a, o
+e, a, i
+u, a, o
+t, w, r
+n, t, r
+t, a, o
+t, a, o
+d,  , c
+n, t, r
+e, i,  
+e, i, a
+o, e, a
+h, s, e
+t, a, o
+t, c, e
+n, s, l
+ , t, e
+t, a, o
+e,  , i
+ , t, e
+t, a, o
+h, i, e
+e, s, i
+d,  , r
+d,  , c
+ , a, o
+t, a, o
+n, v, s
+l, e, y
+ , t, e
+d,  , g
+t, a, o
+ , n, o
+l, n, t
+r, d, n
+s, t, v
+ , s, e
+t, e, a
+n, r, f
+t, a, o
+e, h, a
+ , s, e
+t, a, o
+t, a, o
+ , s, e
+ , s, t
+e, i, a
+e, a, i
+d, s,  
+e, r, l
+ , ,, .
+ , d, n
+h, s, e
+a, e, i
+n, t, r
+e, t, y
+ , t, e
+ , r, n
+t, a, o
+t,  , d
+t, a, o
+e,  , h
+e,  , n
+r, d, s
+n, e, s
+t, a, o
+i, a, o
+e, a, o
+t, a, o
+ , y, e
+t, a, o
+ , d, n
+n, t, c
+t, n, l
+t, e, a
+t, a, o
+e, h, a
+g,  , e
+a, e, i
+l, n, t
+t, a, o
+e, i, a
+h, i, e
+n, r, f
+e, i, a
+t, a, o
+ , r, n
+h, i, e
+e, i,  
+t, a, o
+a, e, r
+ , r, n
+d, s,  
+ , ,, .
+ , d, n
+n, r, f
+ , s, d
+g,  , e
+t, n, l
+ , l, n
+n, t, c
+n, t, c
+ , t, e
+e, a, i
+e, i, a
+r, g, n
+n, t, r
+ , s, t
+n, r, f
+ , r, n
+l, e, a
+t, a, o
+ , e, i
+t, a, o
+h, i, e
+l, e, a
+t, a, o
+h, i, e
+e, i, a
+g,  , e
+t, a, o
+ , s, e
+i, a, e
+d, r, s
+a, e, r
+ , s, e
+t, n, l
+e, a, o
+ , e, i
+t, a, o
+h, i, e
+n, r, f
+t, a, o
+l, s, e
+ , l, n
+ , e, i
+ , s, e
+t, a, o
+e, a, i
+ , t, e
+d, r, s
+ , e, i
+t, a, o
+d,  , w
+ , s, e
+t, a, o
+ , t, e
+a, e, u
+g,  , e
+e,  , i
+ , d, s
+e, h, a
+d, r, s
+n, r, f
+n, m, r
+ , s, e
+e, a, o
+e, s, i
+n, m, r
+a, o, e
+e, a, o
+ , s, d
+ , s, ,
+l, e, a
+e, a, o
+a, e, i
+ , t, e
+n, t, c
+e, h, a
+t, a, o
+n, r, f
+e, i, a
+g,  , e
+ , s, d
+r, d, s
+a, e, r
+r, d, s
+t, l, i
+ , y, e
+t, r, s
+t, a, o
+ , n, o
+l, e, y
+ , e, i
+n, r, f
+e, a, i
+s, c, n
+r, t, l
+ , t, e
+d,  , r
+ , ,, .
+t, a, o
+t, a, o
+t, a, o
+n, t, r
+h, i, e
+e,  , i
+t, a, o
+ , t, e
+n, r, f
+ , t, e
+d, s,  
+ , e, i
+d,  , c
+d, s,  
+e, a, o
+n, c, t
+e, r, l
+d,  , g
+n, t, r
+t, a, o
+t, a, o
+h, i, e
+n, v, s
+s,  , a
+e, r, l
+t, a, o
+ , T, A
+n, t, c
+h, i, e
+ , s, d
+d,  , w
+ , ,, .
+h, i, e
+ , t, e
+ , s, e
+ , ,, i
+n, t, r
+ , s, t
+n, m, r
+e, r, l
+n, r, f
+d, s,  
+t, a, o
+ , t, e
+t, e, a
+t, p, e
+n, t, c
+r, d, n
+n, r, f
+t, a, o
+e, i, a
+t, a, o
+e, h, a
+ , s, d
+h, i, e
+s, c, n
+t, a, o
+t, a, o
+ , e, i
+r, d, s
+ , e, i
+d, s,  
+d, e, i
+a, e, i
+n, r, f
+h, i, e
+t, a, o
+r, n, t
+h, i, e
+ , t, e
+d, e, i
+t, a, o
+ , d, n
+h, i, e
+h, i, e
+e, r, l
+n, r, f
+e, a, i
+r, d, s
+ , e, i
+e, i, a
+e, a, i
+n, t, g
+h, i, e
+ , r, n
+ , t, e
+ , r, n
+e, i, a
+e, h, a
+l, e, a
+e, i, a
+ , d, s
+e,  , h
+e, a, i
+e, h, a
+ , s, e
+n, t, r
+ , t, e
+a, e, i
+e, i, a
+ , d, r
+e,  , i
+t, a, o
+t, e, a
+d,  , c
+e, h, a
+l, o, i
+n, t, g
+a, e, i
+ , s, ,
+n, t, r
+t, a, o
+n, t, g
+d,  , c
+r, g, t
+d, r, s
+n, m, r
+t,  , e
+t, a, o
+d, s,  
+t, a, o
+e, r, l
+t, a, b
+t, a, o
+h, s, e
+t, a, o
+n, v, s
+ , a, o
+n, t, g
+ , s, i
+a, e, i
+d, s,  
+ , t, e
+t, a, o
+n, t, r
+ , n, o
+ , s, e
+h, s, e
+t, a, o
+e,  , i
+e, i, a
+ , s, d
+r, u, c
+ , s, t
+t, a, o
+t,  , d
+ , n, o
+a, e, i
+ , t, e
+t, a, o
+n, t, r
+e, i, a
+t, c, e
+e, a, o
+ , t, e
+ , s, e
+r, d, n
+g,  , e
+h, i, e
+ , t, e
+t, a, o
+t, a, o
+h, i, e
+e, r, l
+l, s, e
+a, e, i
+d, r, s
+s, c, n
+ , s, e
+n, r, f
+t, a, o
+ , t, e
+a, e, r
+n, c, k
+e, t, y
+t, a, o
+r, t, s
+t,  , d
+r, n, t
+a, e, r
+e, s, i
+t, I, h
+ , t, e
+ , t, e
+t, a, o
+t, a, o
+d, s,  
+t, a, o
+n, t, r
+t, v, s
+d,  , g
+e, h, a
+ , r, n
+d,  , c
+t, a, o
+h, i, e
+t, r, s
+ , s, ,
+t, a, o
+r, d, s
+o, n, c
+t, a, o
+n, v, s
+ , a, o
+r, u, c
+t, a, o
+ , e, i
+t, l, i
+e, i, a
+ , a, o
+e, i, a
+t, a, o
+l, o, i
+e, a, o
+ , e, i
+t, a, o
+d,  , c
+d, r, s
+a, e, i
+t, e, a
+ , t, e
+n, u, n
+e, h, a
+n, t, r
+e, a, o
+e,  , h
+l, n, t
+e, t, y
+h, s, e
+r, d, s
+t, a, o
+n, r, f
+n, t, c
+ , a, o
+t, e, a
+n, t, c
+l, e, a
+n, e, s
+e, a, i
+n, r, f
+e, a, i
+ , s, ,
+l, o, i
+t, a, o
+d,  , g
+k, d, l
+e, h, a
+d,  , c
+t, a, o
+n, t, c
+e, a, o
+r, d, s
+l, e, a
+n, r, f
+n, r, f
+t, a, o
+ , ,, i
+ , a, o
+l, e, y
+t, e, a
+t, a, o
+ , a, o
+t, e, a
+t, a, o
+ , s, ,
+ , s, d
+d,  , c
+ , s, e
+e, a, i
+g,  , e
+e,  , n
+ , e, i
+e, h, a
+e, s, i
+t,  , d
+ , s, e
+t,  , e
+e, t, y
+n, d, p
+ , t, e
+t, a, o
+ , s, i
+n, t, g
+h, i, e
+e, a, o
+a, e, r
+l, s, e
+h, i, e
+ , t, e
+a, e, u
+t,  , e
+t, a, o
+t, a, o
+r, g, t
+ , ,, .
+t, a, o
+v,  , o
+ , e, i
+e, a, o
+l, e, a
+n, t, r
+ , s, i
+ , s, e
+e, a, i
+d,  , g
+d,  , g
+d,  , r
+ , r, n
+e, h, a
+h, e, i
+e, h, a
+t, l, i
+t, a, o
+h, i, e
+h, i, e
+n, t, r
+r, n, o
+n, t, c
+ , a, o
+t,  , d
+n, t, c
+d, r, s
+d, s,  
+ , t, e
+ , t, e
+t, a, o
+h, i, e
+ , s, i
+e, i, a
+n, m, r
+y, i, f
+d,  , g
+n, t, c
+ , t, e
+e, a, o
+t,  , e
+t, a, o
+n, t, c
+t, a, o
+ , l, n
+e, r, l
+ , s, ,
+t, a, o
+n, t, r
+n, t, c
+e, a, o
+ , s, e
+ , a, o
+e, i, a
+r, n, t
+r, d, s
+ , r, n
+n, t, c
+ , t, e
+ , ,, i
+ , s, e
+ , t, e
+n, r, f
+n, t, r
+d, e, i
+g,  , e
+e,  , h
+t, a, o
+t, l, n
+ , r, n
+e, a, o
+n, m, r
+a, e, i
+n, r, f
+ , t, e
+ , s, t
+y, i, f
+l, e, a
+t, a, o
+t, a, o
+e,  , a
+t, a, o
+r, n, t
+ , s, e
+d,  , w
+r, d, s
+d, r, s
+r, u, c
+ , t, e
+l, r, s
+d, s,  
+t, a, o
+t, a, o
+e, a, o
+t, a, o
+ , s, e
+t, a, o
+e,  , h
+ , n, c
+t, e, a
+ , n, o
+t, a, o
+t, r, s
+e, r, l
+t, a, o
+e, a, o
+s,  , a
+d,  , c
+ , ,, i
+n, v, s
+d,  , g
+ , s, d
+ , ,, .
+ , r, n
+h, i, e
+l, e, y
+h, i, e
+g,  , e
+g,  , e
+t, a, o
+h, i, e
+l, e, y
+d, r, s
+l, e, y
+ , l, n
+n, u, n
+ , ,, i
+l, e, y
+r, n, t
+t, e, a
+t, a, o
+t, l, i
+n, t, c
+t, a, o
+ , s, e
+ , s, i
+d, r, s
+r, u, c
+ , s, d
+ , s, e
+t, a, o
+ , s, d
+n, c, t
+t, a, o
+e, i, a
+e, i,  
+o, n, c
+n, v, s
+e, i, a
+ , a, o
+y, i, f
+t, a, o
+ , r, n
+e, i,  
+ , s, d
+t, a, o
+d,  , g
+h, i, e
+e, a, o
+t, a, o
+t, l, n
+d, r, s
+ , r, n
+l, e, y
+t, a, o
+t, v, s
+e, a, i
+n, t, g
+t, a, o
+ , ,, .
+t, l, i
+t, e, a
+t, v, s
+e, r, l
+d,  , r
+n, t, r
+ , e, i
+n, r, f
+n, m, p
+t, a, o
+a, e, i
+n, t, c
+t, a, o
+e, s, i
+t, e, a
+r, d, s
+n, t, r
+a, e, o
+d,  , c
+u, n, r
+t, a, o
+n, u, n
+e, a, r
+t, e, a
+ , r, n
+d,  , g
+t, a, o
+k, d, l
+o, n, c
+e, i, a
+r, d, s
+a, e, i
+t, a, o
+e, h, a
+t,  , d
+o, e, i
+n, r, f
+ , ,, i
+l, e, a
+e, r, l
+d, r, s
+l, o, i
+ , ,, .
+s,  , a
+ , t, e
+l, e, y
+ , s, e
+ , s, ,
+h, s, e
+ , s, e
+n, t, g
+n, t, c
+d,  , g
+r, n, t
+n, c, k
+a, e, i
+d, r, s
+t, a, o
+t, a, o
+r, d, s
+e, i, a
+e, h, a
+ , s, ,
+d, s,  
+ , d, n
+t, a, o
+t, a, o
+t, v, s
+n, u, n
+d, s,  
+t, r, s
+ , ,, .
+t, a, o
+h, i, e
+e, t, y
+n, r, f
+t, a, o
+t, a, o
+h, i, e
+l, s, e
+t, a, o
+t, a, o
+e, t, y
+n, d, p
+ , r, n
+n, t, c
+n, m, p
+ , e, i
+ , d, n
+t, v, s
+a, e, i
+g,  , e
+t, a, o
+d, r, s
+n, r, f
+t, n, l
+e, i, a
+a, e, o
+t, e, a
+h, i, e
+t, a, o
+r, t, l
+t, a, o
+ , t, e
+a, e, i
+t, a, o
+ , s, e
+n, m, p
+d, s,  
+t,  , d
+n, t, r
+d,  , g
+n, t, g
+e, s, i
+n, m, r
+r, d, s
+g,  , e
+ , ,, i
+e, t, y
+t, a, o
+e, i, a
+ , t, e
+r, d, s
+l, e, a
+ , l, n
+t, a, o
+n, t, r
+t, a, o
+h, i, e
+r, u, c
+d, s,  
+t, a, o
+e, i,  
+t, a, o
+e, r, l
+e, h, a
+h, i, e
+ , t, e
+ , t, e
+t, w, r
+d, r, s
+t, e, a
+r, n, t
+n, t, r
+t, a, o
+n, r, f
+t, a, o
+h, i, e
+e, i, a
+r, g, t
+ , t, e
+t, a, o
+l, e, y
+ , s, d
+n, t, r
+t, e, a
+d, r, s
+e, a, i
+ , a, o
+t, a, o
+t, a, o
+n, r, f
+ , r, n
+h, i, e
+n, r, f
+e,  , h
+a, e, i
+e,  , i
+a, e, r
+ , e, i
+e, i, a
+ , f, i
+t, a, o
+s, c, n
+e, r, l
+t, a, o
+r, n, t
+ , r, n
+t, l, n
+r, g, t
+r, n, t
+ , e, i
+t, v, s
+ , a, o
+ , s, d
+ , t, e
+e, s, b
+n, t, r
+d, s,  
+d, r, s
+t, e, a
+ , s, ,
+t, a, o
+s,  , e
+h, i, e
+e,  , h
+t, a, o
+e, a, o
+ , s, e
+g,  , e
+h, i, e
+ , r, n
+n, e, s
+r, d, s
+e, i, a
+e, h, a
+t, a, o
+t, v, s
+t, a, o
+t, a, o
+ , e, i
+ , ,, i
+t, a, o
+t, n, l
+n, u, n
+e, a, i
+e, i, a
+ , s, e
+h, i, e
+e, i, a
+t, a, o
+ , e, i
+e,  , a
+a, e, i
+ , t, e
+t, a, o
+e, h, a
+d,  , g
+e,  , h
+n, r, f
+t, a, o
+ , s, e
+n, r, f
+ , s, e
+a, s, r
+t, a, o
+d,  , w
+d,  , g
+t, a, o
+l, n, t
+n, c, t
+e, a, i
+r, n, t
+h, i, e
+e,  , a
+t, c, e
+r,  , n
+l, r, s
+t, a, o
+ , t, e
+t, a, o
+t, a, o
+t, a, o
+l, e, y
+t, a, o
+e, r, l
+t, l, n
+n, r, f
+g,  , e
+t, a, o
+t, e, a
+d,  , c
+l, e, y
+d, r, s
+g,  , e
+n, r, f
+ , e, t
+a, e, i
+t, a, o
+h, i, e
+d,  , g
+ , ,, .
+t, p, e
+ , ,, .
+t, n, l
+t, a, o
+ , ,, .
+ , s, ,
+t, a, o
+e, i, a
+ , e, i
+ , ,, .
+n, m, r
+l, n, t
+d, r, s
+r, n, t
+h, i, e
+u, a, o
+t,  , e
+n, v, s
+ , a, o
+e, a, o
+n, r, f
+ , s, e
+n, t, r
+n, r, f
+n, s, l
+r, d, n
+r, d, n
+h, e, i
+d, s,  
+l, e, a
+r, g, t
+d,  , w
+d,  , g
+ , a, o
+n, t, c
+t, w, r
+ , s, e
+t, a, o
+d,  , g
+ , s, t
+k, d, l
+n, t, r
+t, n, l
+ , e, t
+h, i, e
+n, m, r
+n, d, t
+t, e, a
+a, o, e
+e, a, o
+n, t, c
+t, a, o
+a, e, i
+ , t, e
+e, r, l
+ , e, i
+e, a, i
+t, a, o
+e, r, l
+t, a, o
+n, t, c
+h, e,  
+h, i, e
+ , r, n
+r, d, s
+e, i,  
+ , s, i
+t, a, o
+n, t, c
+t, I, h
+n, c, k
+n, r, f
+ , s, ,
+ , d, s
+t, v, s
+ , y, e
+e, r, l
+e, i, a
+t, a, o
+n, m, p
+e, r, l
+t, a, o
+ , e, i
+e, i, a
+ , y, e
+e, t, y
+ , ,, .
+ , s, e
+ , ,, i
+ , r, n
+e, l, p
+t, a, o
+d,  , c
+n, t, c
+l, e, a
+n, t, r
+s,  , a
+e, h, a
+h, i, e
+n, m, p
+ , s, e
+t, a, o
+e, a, i
+e, i,  
+e, i,  
+d,  , g
+n, t, r
+e, i, a
+g,  , e
+t, a, o
+a, i, e
+d,  , g
+t, c, e
+n, t, r
+e, i, a
+e, i, a
+t, a, o
+ , a, o
+ , ,, .
+r, n, t
+t, v, s
+ , s, e
+d, s,  
+g,  , e
+n, t, r
+r, u, c
+t, a, o
+t, a, o
+e, a, o
+ , t, e
+n, m, p
+a, e, i
+ , t, e
+r, d, s
+t, a, o
+a, o, e
+d,  , g
+n, t, r
+r, g, t
+d, s,  
+t, a, o
+n, t, r
+t, a, o
+t, a, o
+d,  , r
+o, n, c
+t, a, o
+d, s,  
+e, h, a
+n, e, s
+a, o, e
+e, a, o
+ , e, i
+e,  , h
+n, e, s
+o, n, c
+e, a, o
+a, e, i
+t, a, o
+e, i, a
+y, i, f
+n, d, t
+t, a, o
+t, a, o
+g,  , e
+n, t, c
+l, r, s
+t, a, o
+n, t, c
+t, a, o
+o, n, c
+ , n, c
+ , s, i
+ , t, e
+e, h, a
+t, a, o
+e, i,  
+ , e, i
+r,  , n
+a, e, r
+ , s, e
+e, l, p
+r, u, n
+e, a, o
+h, i, e
+r, n, t
+t, a, o
+e, i,  
+t, l, i
+r,  , n
+ , s, e
+l, e, y
+n, r, f
+ , l, n
+t, a, o
+s,  , e
+a, e, i
+ , e, i
+t, a, o
+t, a, o
+r, d, s
+ , n, o
+t, e, a
+d,  , c
+e, s, i
+ , s, e
+e, t, y
+ , t, e
+ , ,, .
+g,  , e
+e, t, y
+o, n, c
+r, d, s
+l, n, t
+ , s, e
+t, a, o
+h, i, e
+ , t, e
+t,  , d
+n, t, c
+t, a, o
+ , s, e
+d, r, s
+ , s, e
+r, d, s
+n, t, r
+h, e, i
+t, v, s
+ , s, e
+n, r, f
+d,  , c
+n, r, f
+ , t, e
+e,  , h
+l, n, t
+h, i, e
+n, m, r
+ , t, e
+t, a, o
+n, t, c
+h, i, e
+ , t, e
+h, i, e
+n, t, c
+d, s,  
+e, s, i
+r, d, s
+t, n, l
+n, m, p
+e, a, o
+l, e, y
+n, r, f
+r, t, s
+ , t, e
+ , t, e
+ , t, e
+i, a, e
+n, t, c
+r, n, t
+n, t, c
+n, t, c
+r, u, c
+e,  , i
+h, i, e
+d, r, s
+h, s, e
+n, s, l
+d, r, t
+t, a, o
+ , T, A
+ , s, e
+e, i, a
+ , ,, .
+l, e, y
+t, a, o
+d, r, s
+t, a, o
+t, r, s
+h, i, e
+ , r, n
+ , s, e
+r, d, n
+e,  , a
+ , r, n
+t, l, n
+e, r, l
+ , a, o
+t, a, o
+d,  , g
+l, e, a
+a, e, i
+t, a, o
+l, e, a
+e, s, i
+t, a, o
+a, e, u
+t, e, a
+ , s, e
+n, r, f
+t, a, o
+r, g, t
+e, r, l
+e, i, a
+n, t, r
+ , e, t
+l, e, a
+e, i, a
+ , t, e
+o, e, i
+ , s, e
+e, s, i
+t, a, o
+a, e, i
+e, i, a
+e, h, a
+t, a, o
+n, t, r
+o, e, i
+d,  , w
+e, r, l
+n, t, g
+t, e, a
+ , r, n
+t, I, h
+e,  , a
+ , a, o
+t, v, s
+n, r, f
+d, r, s
+l, o, i
+d,  , w
+d,  , r
+ , s, e
+e,  , h
+t, a, o
+t,  , d
+ , e, i
+e, i, a
+ , e, t
+l, r, s
+e, a, o
+l, s, e
+h, i, e
+ , s, ,
+ , t, e
+t, a, o
+l, r, s
+t,  , e
+ , t, e
+t, c, e
+e, i, a
+ , p, o
+a, e, r
+ , a, o
+ , t, e
+ , ,, .
+r,  , n
+a, e, i
+ , r, n
+t, a, o
+t, a, b
+r, d, s
+ , s, e
+ , d, n
+n, t, c
+ , s, e
+g,  , e
+ , r, n
+ , s, e
+e, h, a
+t, a, o
+l, r, s
+a, e, i
+t, r, s
+t, a, b
+a, e, i
+n, t, r
+ , s, i
+t, s, n
+ , e, i
+n, u, n
+d,  , g
+u, i, e
+t, l, n
+t, a, o
+ , t, e
+h, e, i
+t, a, o
+a, e, u
+e, a, i
+t, a, o
+t, a, o
+n, r, f
+e, i,  
+n, w,  
+o, n, c
+e,  , a
+t, a, o
+ , s, d
+t, a, o
+u, a, o
+a, o, e
+g,  , e
+a, e, i
+e, h, a
+n, t, c
+n, t, c
+n, c, t
+t, a, o
+e, a, i
+t, a, o
+ , t, e
+ , t, e
+t, a, o
+ , ,, .
+ , r, n
+t, a, o
+ , t, e
+h, i, e
+d, r, s
+d, s,  
+t, a, o
+t, l, i
+e,  , h
+ , s, d
+r, d, s
+t, l, d
+e, i,  
+t, a, o
+o, n, c
+t, a, o
+r, d, s
+n, t, r
+ , y, e
+t, p, e
+ , d, n
+t, a, o
+e, r, l
+ , s, e
+ , d, r
+t, a, o
+t, a, o
+t, a, o
+e, a, o
+ , e, i
+e, h, a
+n, c, t
+e, h, a
+ , e, i
+e, s, i
+h, i, e
+t, a, o
+ , e, i
+ , t, e
+ , t, e
+ , s, e
+r, d, s
+ , ,, .
+t, a, o
+t, a, o
+n, t, r
+t, a, o
+ , t, e
+h, i, e
+ , ,, .
+h, i, e
+ , n, o
+ , t, e
+ , t, e
+n, t, c
+e,  , n
+a, e, r
+ , t, e
+e, a, o
+l, o, i
+n, t, c
+e, i, a
+ , s, e
+o, e, i
+d,  , r
+e, t, y
+ , t, e
+ , ,, .
+e, a, o
+t, a, o
+e, r, l
+t, l, n
+t,  , d
+d,  , w
+n, r, f
+v,  , o
+t, a, o
+ , s, t
+t, a, o
+n, r, f
+ , e, i
+d,  , g
+t, a, o
+ , s, t
+e, t, y
+ , ,, .
+t,  , d
+t,  , d
+r, u, c
+t, a, o
+h, s, e
+e, i, a
+d,  , w
+h, i, e
+t, a, o
+ , t, e
+e, a, i
+ , s, d
+ , t, e
+e, r, l
+n, d, p
+t, v, s
+ , d, n
+l, e, y
+t, a, o
+e, h, a
+n, w,  
+e, i,  
+ , s, t
+ , s, e
+ , s, d
+t, a, o
+e, s, i
+ , a, o
+e, i,  
+a, s, r
+l, e, y
+n, r, f
+e, i, a
+ , t, e
+e, a, i
+ , t, e
+h, i, e
+n, u, n
+e, s, i
+t, a, o
+n, r, f
+e,  , a
+t, a, o
+t, w, r
+ , s, e
+e, s, i
+e, i, a
+e, a, o
+ , s, t
+ , s, i
+d,  , c
+n, m, p
+t, a, o
+ , t, e
+e, h, a
+ , a, o
+e, h, a
+ , t, e
+n, s, l
+n, c, t
+n, t, c
+t, l, n
+r, d, s
+e, h, a
+r, n, t
+o, e, i
+ , t, e
+r, d, s
+e, i, a
+ , s, i
+ , e, t
+t, a, o
+e, a, o
+a, e, i
+t, a, o
+d,  , g
+t, a, o
+ , e, i
+n, m, p
+t, a, o
+l, e, y
+l, e, y
+n, c, k
+ , ,, .
+ , s, t
+ , y, e
+t, c, e
+ , d, r
+ , ,, .
+n, m, p
+n, t, r
+e, i, a
+n, c, k
+ , t, e
+ , p, o
+e, a, i
+t, c, e
+e, t, y
+h, i, e
+h, i, e
+h, s, e
+ , t, e
+e,  , i
+e,  , h
+t, v, s
+d, e, i
+t, l, i
+e, i, a
+t, a, o
+d,  , c
+e, t, y
+ , s, e
+e, i,  
+n, t, c
+e, h, a
+t, a, o
+t, a, o
+r, g, t
+ , n, o
+e, a, r
+r, u, c
+ , s, t
+ , y, e
+ , a, o
+e, a, i
+e, i, a
+t, a, o
+e, h, a
+t, a, o
+a, e, i
+ , s, e
+t, a, o
+s, c, n
+e, i, a
+n, v, s
+t, a, o
+r, g, t
+ , t, e
+t, I, h
+l, n, t
+t, w, r
+r, d, s
+ , d, r
+n, t, r
+t, a, o
+s,  , a
+d,  , c
+ , a, o
+t, l, d
+e, h, a
+a, e, i
+ , ,, .
+t, a, o
+a, e, i
+ , t, e
+e, r, l
+n, t, r
+t, a, o
+a, e, r
+n, d, p
+ , ,, .
+t, a, o
+ , ,, .
+t, e, a
+t, a, o
+t, l, i
+r, d, s
+ , s, e
+e, i, a
+r, n, t
+n, t, r
+ , t, e
+t, a, o
+h, i, e
+t, a, o
+t, a, o
+h, i, e
+d, r, s
+h, s, e
+ , a, o
+ , ,, .
+e, h, a
+ , s, i
+t, v, s
+l, e, y
+n, t, c
+e, t, y
+t,  , d
+t, a, o
+r, g, t
+a, e, i
+u, a, o
+n, m, r
+e, i, a
+t, e, a
+e, i, a
+a, e, r
+t, a, o
+t, a, o
+ , r, n
+ , s, e
+l, e, a
+e,  , h
+d, r, s
+t, e, a
+e, s, i
+s, c, n
+t, e, a
+l, e, a
+ , d, n
+d,  , g
+ , s, i
+t, p, e
+n, w,  
+e,  , a
+t, a, o
+g,  , e
+e, a, i
+ , e, i
+e, i, a
+h, i, e
+s, c, n
+t, e, a
+e, a, o
+t, a, o
+e, t, y
+r, u, c
+n, t, c
+e, i, a
+ , t, e
+e, i, a
+e, i, a
+e, a, o
+t, a, o
+t,  , d
+t, I, h
+t,  , d
+ , l, n
+d, s,  
+e, i, a
+a, e, r
+ , r, n
+h, i, e
+t, a, o
+e, i, a
+a, e, r
+e, i, a
+t, a, o
+t, a, o
+h, i, e
+ , ,, .
+t, a, o
+t,  , d
+d,  , g
+n, d, p
+d,  , c
+t, a, o
+e, i, a
+e, a, o
+n, r, f
+ , ,, .
+h, i, e
+e, s, b
+t, a, o
+d, s,  
+t, a, o
+r, u, n
+e, a, o
+l, o, i
+o, e, i
+n, r, f
+o, n, c
+t, a, o
+e, i, a
+ , s, e
+t, a, o
+h, i, e
+ , ,, .
+s,  , e
+g,  , e
+s,  , a
+e, i,  
+r,  , n
+ , ,, .
+r, d, s
+l, e, y
+n, t, r
+ , n, o
+e, i, a
+d,  , c
+d,  , c
+n, t, r
+n, t, r
+a, e, r
+n, t, c
+u, i, e
+ , d, r
+e, a, o
+n, r, f
+n, r, f
+n, t, c
+d,  , g
+n, t, c
+t, a, o
+g,  , e
+n, c, k
+t, a, o
+ , e, i
+g,  , e
+t, a, o
+l, e, a
+g,  , e
+d,  , r
+t, a, o
+l, e, y
+t,  , e
+s,  , a
+r, t, l
+e,  , h
+e, a, i
+g,  , e
+t, a, o
+d,  , c
+r, n, t
+t, a, o
+d, r, s
+h, i, e
+ , s, i
+h, i, e
+t, a, o
+h, i, e
+l, s, e
+n, t, r
+d, s,  
+ , e, i
+ , d, n
+ , t, e
+t, a, o
+ , l, n
+n, m, p
+e,  , h
+e, r, l
+n, r, f
+n, t, r
+t, n, l
+s, t, v
+e, s, i
+n, t, c
+t, a, o
+l, e, y
+n, t, c
+ , a, o
+ , s, e
+l, n, t
+ , s, e
+n, t, r
+e, i, a
+t, c, e
+ , ,, .
+ , d, n
+n, r, f
+t, a, o
+e, a, o
+e, a, o
+n, t, r
+n, t, r
+d, s,  
+t, e, a
+e,  , h
+ , a, o
+d, s,  
+t, a, o
+e, t, y
+t, a, o
+e, h, a
+n, v, s
+ , s, i
+t, s, n
+n, r, f
+ , t, e
+h, i, e
+l, n, t
+ , n, o
+n, r, f
+t, a, o
+t, a, o
+t, a, o
+ , s, ,
+d,  , g
+d,  , w
+e, i,  
+n, t, g
+a, e, r
+r, n, o
+ , t, e
+ , n, o
+a, s, r
+ , a, o
+n, t, r
+e, i, a
+ , s, e
+h, e, i
+t, a, b
+n, r, f
+ , ,, .
+h, i, e
+ , s, d
+n, s, l
+o, n, c
+t, a, o
+o, n, c
+h, i, e
+l, e, y
+t, l, n
+a, e, i
+l, e, a
+n, r, f
+e, r, l
+t, v, s
+d, s,  
+l, e, y
+n, t, r
+t, n, l
+t, w, r
+ , ,, .
+n, r, f
+s, c, n
+ , s, e
+e, r, l
+ , t, e
+e, i, a
+ , s, e
+h, i, e
+ , s, i
+d, r, s
+n, v, s
+ , e, t
+a, e, i
+r, d, n
+r, d, s
+e, a, o
+d,  , g
+d, r, s
+d,  , c
+ , s, e
+d,  , w
+ , t, e
+e, r, l
+t, a, o
+ , s, d
+ , ,, .
+ , s, e
+r, n, t
+t, a, o
+d, r, s
+t, a, o
+t, I, h
+i, a, e
+e, i, a
+ , d, r
+t, a, b
+t, a, o
+t,  , d
+t, a, o
+t, a, o
+t, a, o
+t, a, o
+e, i, a
+ , l, n
+ , d, s
+d, s,  
+t, l, i
+t, e, a
+ , s, e
+e, i, a
+t, a, o
+s, c, n
+d,  , g
+t, a, o
+d,  , r
+ , s, t
+ , s, e
+r, n, o
+e, h, a
+t, a, o
+ , d, r
+n, m, p
+d, n, s
+ , s, d
+e, i, a
+t,  , d
+e, i, a
+t, v, s
+e, i, a
+n, d, t
+ , ,, .
+ , t, e
+ , ,, .
+e,  , a
+ , t, e
+ , t, e
+t, a, o
+e, r, l
+n, t, c
+ , t, e
+n, c, t
+n, t, r
+n, r, f
+e, a, o
+ , r, n
+n, t, r
+ , t, e
+k, d, l
+n, r, f
+t, a, o
+d, s,  
+t, a, o
+ , t, e
+t, a, o
+d,  , r
+r, d, s
+e, a, o
+t,  , d
+n, t, r
+h, i, e
+h, s, e
+ , e, i
+r, d, n
+n, t, r
+ , ,, i
+ , s, e
+t, a, o
+n, r, f
+ , s, e
+t, a, o
+l, n, t
+ , ,, .
+n, t, r
+ , t, e
+r, n, o
+ , s, i
+l, s, e
+ , t, e
+ , s, e
+n, r, f
+e, i, a
+l, e, a
+l, s, e
+t, w, r
+e, r, l
+h, s, e
+e, a, o
+r, n, o
+h, i, e
+h, e,  
+ , s, e
+t, e, a
+t,  , d
+h, i, e
+t, a, o
+n, t, r
+r, d, s
+t, a, o
+e, i,  
+t, a, o
+h, i, e
+ , s, e
+u, n, r
+t, p, e
+e, i, a
+s, c, n
+h, e,  
+t, a, b
+d, s,  
+h, i, e
+t, v, s
+a, e, u
+n, t, g
+h, i, e
+e, t, y
+ , ,, .
+g,  , e
+ , s, e
+e, a, o
+i, o, a
+l, n, t
+ , s, d
+e, r, l
+i, a, e
+e, i, a
+t, a, o
+e, t, y
+e, i, a
+d, s,  
+d, s,  
+t, a, o
+ , s, e
+t, a, o
+t, a, o
+e, i,  
+a, e, i
+t, a, o
+t, a, o
+e, h, a
+d,  , w
+t, a, o
+n, t, r
+l, e, y
+a, e, r
+e, a, i
+ , t, e
+r, d, s
+e, i, a
+t, a, o
+ , ,, .
+t, w, r
+e, t, y
+ , s, e
+t, a, o
+s, c, n
+t, a, o
+n, c, t
+s,  , a
+t, a, o
+n, l, t
+ , r, n
+n, t, r
+o, n, c
+t, a, o
+ , a, o
+n, t, c
+e, i,  
+t, v, s
+t, a, o
+ , t, e
+t, a, o
+h, i, e
+e, i, a
+ , l, n
+t, a, o
+d, s,  
+e, a, o
+t, e, a
+d, e, i
+e,  , i
+l, e, a
+d, r, s
+ , s, t
+t, a, o
+u, i, e
+l, e, y
+t, a, o
+t, a, o
+a, e, u
+e, i, a
+n, r, f
+n, r, f
+t, a, o
+t, a, o
+ , e, i
+t, e, a
+ , s, e
+r, d, n
+r, n, o
+n, m, p
+ , t, e
+d, e, i
+r,  , n
+n, r, f
+ , t, e
+l, e, y
+e,  , n
+ , s, ,
+n, r, f
+t, r, s
+e, i, a
+ , r, n
+ , d, r
