@@ -1,0 +1,360 @@
+Instatiating model
+Loading training data
+Loaded 1775257 total training lines
+Using 200000 lines for hyperparameter tuning
+Preparing train/validation split for tuning
+
+=== Trial 0 / 6 ===
+{'bls': 32, 'ed': 64, 'hs': 256, 'nl': 1, 'do': 0.2, 'bas': 256, 'st': 3000, 'lr': 0.001}
+Building/loading training tensors...
+Loading cached tensors from work/trial_0/cache/train_bls32.pt
+Building/loading validation tensors...
+Loading cached tensors from work/trial_0/cache/val_bls32.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 3,000 | Batch: 256 | Vocab: 4,457 | Examples: 3,186,089
+────────────────────────────────────────────────────────────────────
+
+step 0 | loss 8.4121
+step 250 | loss 4.1355 | val_top3 0.3548
+step 500 | loss 3.4204 | val_top3 0.3919
+step 750 | loss 3.2806 | val_top3 0.4090
+step 1000 | loss 3.2769 | val_top3 0.4266
+step 1250 | loss 3.4666 | val_top3 0.4363
+step 1500 | loss 3.0674 | val_top3 0.4441
+step 1750 | loss 3.2356 | val_top3 0.4539
+step 2000 | loss 3.1948 | val_top3 0.4653
+step 2250 | loss 3.3152 | val_top3 0.4708
+step 2500 | loss 3.1955 | val_top3 0.4748
+step 2750 | loss 2.9393 | val_top3 0.4819
+Model saved to work/trial_0
+final val_top3 = 0.4819
+trial 0 val_top3 = 0.4819
+
+=== Trial 1 / 6 ===
+{'bls': 64, 'ed': 64, 'hs': 512, 'nl': 2, 'do': 0.3, 'bas': 256, 'st': 3000, 'lr': 0.001}
+Building/loading training tensors...
+Cache miss for work/trial_1/cache/train_bls64.pt
+Building vocab/X/Y for 180000 sentences (block_size=64)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/180000 sentences...
+Processed 50000/180000 sentences...
+Processed 100000/180000 sentences...
+Processed 150000/180000 sentences...
+Created 3186089 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_1/cache/train_bls64.pt
+Building/loading validation tensors...
+Cache miss for work/trial_1/cache/val_bls64.pt
+Building vocab/X/Y for 20000 sentences (block_size=64)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/20000 sentences...
+Created 356333 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_1/cache/val_bls64.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 3,000 | Batch: 256 | Vocab: 4,457 | Examples: 3,186,089
+────────────────────────────────────────────────────────────────────
+
+step 0 | loss 8.3970
+step 250 | loss 4.2243 | val_top3 0.3011
+step 500 | loss 3.5882 | val_top3 0.3649
+step 750 | loss 3.3539 | val_top3 0.3955
+step 1000 | loss 3.5866 | val_top3 0.4134
+step 1250 | loss 3.3962 | val_top3 0.4249
+step 1500 | loss 3.2260 | val_top3 0.4339
+step 1750 | loss 3.2301 | val_top3 0.4489
+step 2000 | loss 3.4079 | val_top3 0.4560
+step 2250 | loss 2.9887 | val_top3 0.4624
+step 2500 | loss 3.0051 | val_top3 0.4688
+step 2750 | loss 2.9364 | val_top3 0.4758
+Model saved to work/trial_1
+final val_top3 = 0.4758
+trial 1 val_top3 = 0.4758
+
+=== Trial 2 / 6 ===
+{'bls': 64, 'ed': 128, 'hs': 512, 'nl': 2, 'do': 0.3, 'bas': 256, 'st': 5000, 'lr': 0.001}
+Building/loading training tensors...
+Cache miss for work/trial_2/cache/train_bls64.pt
+Building vocab/X/Y for 180000 sentences (block_size=64)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/180000 sentences...
+Processed 50000/180000 sentences...
+Processed 100000/180000 sentences...
+Processed 150000/180000 sentences...
+Created 3186089 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_2/cache/train_bls64.pt
+Building/loading validation tensors...
+Cache miss for work/trial_2/cache/val_bls64.pt
+Building vocab/X/Y for 20000 sentences (block_size=64)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/20000 sentences...
+Created 356333 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_2/cache/val_bls64.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 5,000 | Batch: 256 | Vocab: 4,457 | Examples: 3,186,089
+────────────────────────────────────────────────────────────────────
+
+step 0 | loss 8.4014
+step 250 | loss 3.8577 | val_top3 0.3566
+step 500 | loss 3.5932 | val_top3 0.3919
+step 750 | loss 3.4287 | val_top3 0.4152
+step 1000 | loss 3.3835 | val_top3 0.4338
+step 1250 | loss 3.0901 | val_top3 0.4450
+step 1500 | loss 3.2393 | val_top3 0.4568
+step 1750 | loss 2.8680 | val_top3 0.4667
+step 2000 | loss 3.0750 | val_top3 0.4706
+step 2250 | loss 2.9974 | val_top3 0.4836
+step 2500 | loss 3.0649 | val_top3 0.4907
+step 2750 | loss 3.1934 | val_top3 0.5008
+step 3000 | loss 3.2144 | val_top3 0.5052
+step 3250 | loss 2.7961 | val_top3 0.5116
+step 3500 | loss 3.1517 | val_top3 0.5195
+step 3750 | loss 3.0105 | val_top3 0.5214
+step 4000 | loss 2.5947 | val_top3 0.5260
+step 4250 | loss 2.8974 | val_top3 0.5309
+step 4500 | loss 2.9125 | val_top3 0.5371
+step 4750 | loss 2.7889 | val_top3 0.5405
+Model saved to work/trial_2
+final val_top3 = 0.5405
+trial 2 val_top3 = 0.5405
+
+=== Trial 3 / 6 ===
+{'bls': 96, 'ed': 128, 'hs': 512, 'nl': 2, 'do': 0.4, 'bas': 128, 'st': 5000, 'lr': 0.001}
+Building/loading training tensors...
+Cache miss for work/trial_3/cache/train_bls96.pt
+Building vocab/X/Y for 180000 sentences (block_size=96)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/180000 sentences...
+Processed 50000/180000 sentences...
+Processed 100000/180000 sentences...
+Processed 150000/180000 sentences...
+Created 3186089 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_3/cache/train_bls96.pt
+Building/loading validation tensors...
+Cache miss for work/trial_3/cache/val_bls96.pt
+Building vocab/X/Y for 20000 sentences (block_size=96)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/20000 sentences...
+Created 356333 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_3/cache/val_bls96.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 5,000 | Batch: 128 | Vocab: 4,457 | Examples: 3,186,089
+────────────────────────────────────────────────────────────────────
+
+step 0 | loss 8.4023
+step 250 | loss 4.3191 | val_top3 0.3107
+step 500 | loss 3.8575 | val_top3 0.3744
+step 750 | loss 3.7377 | val_top3 0.3968
+step 1000 | loss 3.4586 | val_top3 0.4055
+step 1250 | loss 3.2249 | val_top3 0.4202
+step 1500 | loss 3.4793 | val_top3 0.4287
+step 1750 | loss 3.4036 | val_top3 0.4378
+step 2000 | loss 2.8498 | val_top3 0.4430
+step 2250 | loss 3.4002 | val_top3 0.4517
+step 2500 | loss 2.9674 | val_top3 0.4592
+step 2750 | loss 2.9449 | val_top3 0.4622
+step 3000 | loss 3.1781 | val_top3 0.4708
+step 3250 | loss 2.6877 | val_top3 0.4748
+step 3500 | loss 3.0205 | val_top3 0.4779
+step 3750 | loss 2.4970 | val_top3 0.4842
+step 4000 | loss 2.9619 | val_top3 0.4884
+step 4250 | loss 2.7826 | val_top3 0.4938
+step 4500 | loss 2.7359 | val_top3 0.4952
+step 4750 | loss 2.8125 | val_top3 0.5003
+Model saved to work/trial_3
+final val_top3 = 0.5003
+trial 3 val_top3 = 0.5003
+
+=== Trial 4 / 6 ===
+{'bls': 64, 'ed': 64, 'hs': 512, 'nl': 2, 'do': 0.3, 'bas': 256, 'st': 5000, 'lr': 0.0003}
+Building/loading training tensors...
+Cache miss for work/trial_4/cache/train_bls64.pt
+Building vocab/X/Y for 180000 sentences (block_size=64)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/180000 sentences...
+Processed 50000/180000 sentences...
+Processed 100000/180000 sentences...
+Processed 150000/180000 sentences...
+Created 3186089 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_4/cache/train_bls64.pt
+Building/loading validation tensors...
+Cache miss for work/trial_4/cache/val_bls64.pt
+Building vocab/X/Y for 20000 sentences (block_size=64)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/20000 sentences...
+Created 356333 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_4/cache/val_bls64.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 5,000 | Batch: 256 | Vocab: 4,457 | Examples: 3,186,089
+────────────────────────────────────────────────────────────────────
+
+step 0 | loss 8.3993
+step 250 | loss 4.6100 | val_top3 0.2525
+step 500 | loss 4.0875 | val_top3 0.3464
+step 750 | loss 3.6764 | val_top3 0.3636
+step 1000 | loss 3.6561 | val_top3 0.3793
+step 1250 | loss 3.5693 | val_top3 0.3944
+step 1500 | loss 3.4050 | val_top3 0.4020
+step 1750 | loss 3.4894 | val_top3 0.4124
+step 2000 | loss 3.3807 | val_top3 0.4186
+step 2250 | loss 3.2560 | val_top3 0.4267
+step 2500 | loss 3.2579 | val_top3 0.4317
+step 2750 | loss 3.2953 | val_top3 0.4421
+step 3000 | loss 3.3488 | val_top3 0.4478
+step 3250 | loss 3.2506 | val_top3 0.4533
+step 3500 | loss 3.2542 | val_top3 0.4579
+step 3750 | loss 3.2611 | val_top3 0.4616
+step 4000 | loss 3.2758 | val_top3 0.4658
+step 4250 | loss 3.1071 | val_top3 0.4724
+step 4500 | loss 3.2602 | val_top3 0.4741
+step 4750 | loss 3.3968 | val_top3 0.4771
+Model saved to work/trial_4
+final val_top3 = 0.4771
+trial 4 val_top3 = 0.4771
+
+=== Trial 5 / 6 ===
+{'bls': 64, 'ed': 128, 'hs': 768, 'nl': 2, 'do': 0.3, 'bas': 128, 'st': 5000, 'lr': 0.0003}
+Building/loading training tensors...
+Cache miss for work/trial_5/cache/train_bls64.pt
+Building vocab/X/Y for 180000 sentences (block_size=64)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/180000 sentences...
+Processed 50000/180000 sentences...
+Processed 100000/180000 sentences...
+Processed 150000/180000 sentences...
+Created 3186089 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_5/cache/train_bls64.pt
+Building/loading validation tensors...
+Cache miss for work/trial_5/cache/val_bls64.pt
+Building vocab/X/Y for 20000 sentences (block_size=64)
+Vocabulary size: 4457
+Generating training examples...
+Processed 0/20000 sentences...
+Created 356333 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/trial_5/cache/val_bls64.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 5,000 | Batch: 128 | Vocab: 4,457 | Examples: 3,186,089
+────────────────────────────────────────────────────────────────────
+
+step 0 | loss 8.4034
+step 250 | loss 4.5720 | val_top3 0.3137
+step 500 | loss 4.0039 | val_top3 0.3607
+step 750 | loss 3.5996 | val_top3 0.3746
+step 1000 | loss 4.1103 | val_top3 0.3911
+step 1250 | loss 3.6559 | val_top3 0.4046
+step 1500 | loss 3.7665 | val_top3 0.4174
+step 1750 | loss 3.4071 | val_top3 0.4253
+step 2000 | loss 3.3033 | val_top3 0.4346
+step 2250 | loss 3.3230 | val_top3 0.4414
+step 2500 | loss 3.3064 | val_top3 0.4479
+step 2750 | loss 3.2283 | val_top3 0.4534
+step 3000 | loss 3.2780 | val_top3 0.4591
+step 3250 | loss 3.3425 | val_top3 0.4647
+step 3500 | loss 2.7926 | val_top3 0.4740
+step 3750 | loss 3.2234 | val_top3 0.4755
+step 4000 | loss 3.3554 | val_top3 0.4807
+step 4250 | loss 3.2643 | val_top3 0.4866
+step 4500 | loss 3.0779 | val_top3 0.4867
+step 4750 | loss 2.7779 | val_top3 0.4958
+Model saved to work/trial_5
+final val_top3 = 0.4958
+trial 5 val_top3 = 0.4958
+
+Best config: {'bls': 64, 'ed': 128, 'hs': 512, 'nl': 2, 'do': 0.3, 'bas': 256, 'st': 5000, 'lr': 0.001}
+Best validation top-3 accuracy: 0.5405
+
+Retraining best config on full training data
+Building/loading training tensors...
+Cache miss for work/cache/train_bls64.pt
+Building vocab/X/Y for 1775257 sentences (block_size=64)
+Vocabulary size: 7225
+Generating training examples...
+Processed 0/1775257 sentences...
+Processed 50000/1775257 sentences...
+Processed 100000/1775257 sentences...
+Processed 150000/1775257 sentences...
+Processed 200000/1775257 sentences...
+Processed 250000/1775257 sentences...
+Processed 300000/1775257 sentences...
+Processed 350000/1775257 sentences...
+Processed 400000/1775257 sentences...
+Processed 450000/1775257 sentences...
+Processed 500000/1775257 sentences...
+Processed 550000/1775257 sentences...
+Processed 600000/1775257 sentences...
+Processed 650000/1775257 sentences...
+Processed 700000/1775257 sentences...
+Processed 750000/1775257 sentences...
+Processed 800000/1775257 sentences...
+Processed 850000/1775257 sentences...
+Processed 900000/1775257 sentences...
+Processed 950000/1775257 sentences...
+Processed 1000000/1775257 sentences...
+Processed 1050000/1775257 sentences...
+Processed 1100000/1775257 sentences...
+Processed 1150000/1775257 sentences...
+Processed 1200000/1775257 sentences...
+Processed 1250000/1775257 sentences...
+Processed 1300000/1775257 sentences...
+Processed 1350000/1775257 sentences...
+Processed 1400000/1775257 sentences...
+Processed 1450000/1775257 sentences...
+Processed 1500000/1775257 sentences...
+Processed 1550000/1775257 sentences...
+Processed 1600000/1775257 sentences...
+Processed 1650000/1775257 sentences...
+Processed 1700000/1775257 sentences...
+Processed 1750000/1775257 sentences...
+Created 31386750 examples. Converting to tensors...
+Tensor conversion complete.
+Saved cache to work/cache/train_bls64.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 5,000 | Batch: 256 | Vocab: 7,225 | Examples: 31,386,750
+────────────────────────────────────────────────────────────────────
+
+step 0 | loss 8.8833
+step 250 | loss 4.7707
+step 500 | loss 3.8855
+step 750 | loss 3.6255
+step 1000 | loss 3.4978
+step 1250 | loss 3.4292
+step 1500 | loss 3.1615
+step 1750 | loss 3.4757
+step 2000 | loss 3.2226
+step 2250 | loss 3.2141
+step 2500 | loss 3.2568
+step 2750 | loss 3.1337
+step 3000 | loss 2.9322
+step 3250 | loss 3.0440
+step 3500 | loss 3.0636
+step 3750 | loss 3.0294
+step 4000 | loss 3.3096
+step 4250 | loss 2.9685
+step 4500 | loss 3.0167
+step 4750 | loss 2.9336
+Model saved to work
+Saving model
