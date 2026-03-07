@@ -111,7 +111,7 @@ class MyModel:
             X = torch.tensor(x, dtype = torch.long)
             Y = torch.tensor(y, dtype = torch.long)
 
-            embed_dim = 64
+            embed_dim = 128
             hidden_size = 512
             num_layers = 2
             dropout = 0.3
