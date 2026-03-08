@@ -1,0 +1,256 @@
+Loading training data
+Loading paired data from train_input_ara.txt and train_answer_ara.txt
+Loading paired data from train_input_deu.txt and train_answer_deu.txt
+Loading paired data from train_input_eng.txt and train_answer_eng.txt
+Loading paired data from train_input_fra.txt and train_answer_fra.txt
+Loading paired data from train_input_jpn.txt and train_answer_jpn.txt
+Loading paired data from train_input_kor.txt and train_answer_kor.txt
+Loading paired data from train_input_por.txt and train_answer_por.txt
+Loading paired data from train_input_rus.txt and train_answer_rus.txt
+Loading paired data from train_input_spa.txt and train_answer_spa.txt
+Loading paired data from train_input_zho.txt and train_answer_zho.txt
+Loaded 950000 paired training examples
+
+===== Trial 0 =====
+{'block_size': 32, 'embed_dim': 128, 'hidden_size': 512, 'num_layers': 2, 'dropout': 0.2, 'batch_size': 256, 'steps': 8000, 'min_count': 1}
+Loading cached vocab from work/shared_cache/vocab_mc1.pt
+Loading cached tensors from work/shared_cache/train_bs32_mc1.pt
+Loading cached tensors from work/shared_cache/val_bs32_mc1.pt
+Loading cached n-gram counts from work/shared_cache/ngram_mc1_ord6.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 8,000 | Batch: 256 | Vocab: 9,564 | Train examples: 855,000
+  Val examples: 94,995 | Min count: 1
+  Cache dir: work/shared_cache
+  N-gram order: 6 | Interp alpha: 0.6
+────────────────────────────────────────────────────────────────────
+
+step 0 | train loss 9.1659 | val loss 9.1242
+  saved new best model to work/trial_0
+step 500 | train loss 3.8811 | val loss 4.1863
+  saved new best model to work/trial_0
+step 1000 | train loss 3.7637 | val loss 3.6880
+  saved new best model to work/trial_0
+step 1500 | train loss 3.4501 | val loss 3.5589
+  saved new best model to work/trial_0
+step 2000 | train loss 3.3797 | val loss 3.4571
+  saved new best model to work/trial_0
+step 2500 | train loss 3.6604 | val loss 3.3882
+  saved new best model to work/trial_0
+step 3000 | train loss 3.5422 | val loss 3.3220
+  saved new best model to work/trial_0
+step 3500 | train loss 3.3058 | val loss 3.2806
+  saved new best model to work/trial_0
+step 4000 | train loss 3.3945 | val loss 3.2455
+  saved new best model to work/trial_0
+step 4500 | train loss 3.2511 | val loss 3.2020
+  saved new best model to work/trial_0
+step 5000 | train loss 3.1127 | val loss 3.1792
+  saved new best model to work/trial_0
+step 5500 | train loss 3.0994 | val loss 3.1480
+  saved new best model to work/trial_0
+step 6000 | train loss 3.2818 | val loss 3.1136
+  saved new best model to work/trial_0
+step 6500 | train loss 3.2649 | val loss 3.0902
+  saved new best model to work/trial_0
+step 7000 | train loss 3.1750 | val loss 3.0760
+  saved new best model to work/trial_0
+step 7500 | train loss 3.1089 | val loss 3.0485
+  saved new best model to work/trial_0
+Best val loss: 3.0485
+
+===== Trial 1 =====
+{'block_size': 64, 'embed_dim': 128, 'hidden_size': 512, 'num_layers': 2, 'dropout': 0.2, 'batch_size': 256, 'steps': 8000, 'min_count': 1}
+Loading cached vocab from work/shared_cache/vocab_mc1.pt
+Cache miss for work/shared_cache/train_bs64_mc1.pt
+Processed 0/855000 pairs...
+Processed 50000/855000 pairs...
+Processed 100000/855000 pairs...
+Processed 150000/855000 pairs...
+Processed 200000/855000 pairs...
+Processed 250000/855000 pairs...
+Processed 300000/855000 pairs...
+Processed 350000/855000 pairs...
+Processed 400000/855000 pairs...
+Processed 450000/855000 pairs...
+Processed 500000/855000 pairs...
+Processed 550000/855000 pairs...
+Processed 600000/855000 pairs...
+Processed 650000/855000 pairs...
+Processed 700000/855000 pairs...
+Processed 750000/855000 pairs...
+Processed 800000/855000 pairs...
+Processed 850000/855000 pairs...
+Saved cache to work/shared_cache/train_bs64_mc1.pt
+Cache miss for work/shared_cache/val_bs64_mc1.pt
+Processed 0/95000 pairs...
+Processed 50000/95000 pairs...
+Saved cache to work/shared_cache/val_bs64_mc1.pt
+Loading cached n-gram counts from work/shared_cache/ngram_mc1_ord6.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 8,000 | Batch: 256 | Vocab: 9,564 | Train examples: 855,000
+  Val examples: 94,995 | Min count: 1
+  Cache dir: work/shared_cache
+  N-gram order: 6 | Interp alpha: 0.6
+────────────────────────────────────────────────────────────────────
+
+step 0 | train loss 9.1646 | val loss 9.1228
+  saved new best model to work/trial_1
+step 500 | train loss 3.9349 | val loss 3.9078
+  saved new best model to work/trial_1
+step 1000 | train loss 3.6614 | val loss 3.6372
+  saved new best model to work/trial_1
+step 1500 | train loss 3.2264 | val loss 3.5167
+  saved new best model to work/trial_1
+step 2000 | train loss 3.4315 | val loss 3.4063
+  saved new best model to work/trial_1
+step 2500 | train loss 3.5696 | val loss 3.3340
+  saved new best model to work/trial_1
+step 3000 | train loss 3.1996 | val loss 3.2722
+  saved new best model to work/trial_1
+step 3500 | train loss 3.1818 | val loss 3.2340
+  saved new best model to work/trial_1
+step 4000 | train loss 3.1491 | val loss 3.1953
+  saved new best model to work/trial_1
+step 4500 | train loss 3.1242 | val loss 3.1546
+  saved new best model to work/trial_1
+step 5000 | train loss 3.1612 | val loss 3.1194
+  saved new best model to work/trial_1
+step 5500 | train loss 2.8838 | val loss 3.0879
+  saved new best model to work/trial_1
+step 6000 | train loss 3.0047 | val loss 3.0599
+  saved new best model to work/trial_1
+step 6500 | train loss 3.0837 | val loss 3.0342
+  saved new best model to work/trial_1
+step 7000 | train loss 2.8928 | val loss 3.0142
+  saved new best model to work/trial_1
+step 7500 | train loss 2.7942 | val loss 2.9963
+  saved new best model to work/trial_1
+Best val loss: 2.9963
+
+===== Trial 2 =====
+{'block_size': 64, 'embed_dim': 128, 'hidden_size': 512, 'num_layers': 2, 'dropout': 0.1, 'batch_size': 256, 'steps': 10000, 'min_count': 1}
+Loading cached vocab from work/shared_cache/vocab_mc1.pt
+Loading cached tensors from work/shared_cache/train_bs64_mc1.pt
+Loading cached tensors from work/shared_cache/val_bs64_mc1.pt
+Loading cached n-gram counts from work/shared_cache/ngram_mc1_ord6.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 10,000 | Batch: 256 | Vocab: 9,564 | Train examples: 855,000
+  Val examples: 94,995 | Min count: 1
+  Cache dir: work/shared_cache
+  N-gram order: 6 | Interp alpha: 0.6
+────────────────────────────────────────────────────────────────────
+
+step 0 | train loss 9.1769 | val loss 9.1366
+  saved new best model to work/trial_2
+step 500 | train loss 3.6630 | val loss 3.8331
+  saved new best model to work/trial_2
+step 1000 | train loss 3.6548 | val loss 3.5843
+  saved new best model to work/trial_2
+step 1500 | train loss 3.7714 | val loss 3.4611
+  saved new best model to work/trial_2
+step 2000 | train loss 3.2865 | val loss 3.3592
+  saved new best model to work/trial_2
+step 2500 | train loss 3.4402 | val loss 3.2886
+  saved new best model to work/trial_2
+step 3000 | train loss 3.2624 | val loss 3.2317
+  saved new best model to work/trial_2
+step 3500 | train loss 3.0720 | val loss 3.1813
+  saved new best model to work/trial_2
+step 4000 | train loss 3.0341 | val loss 3.1417
+  saved new best model to work/trial_2
+step 4500 | train loss 3.0752 | val loss 3.0981
+  saved new best model to work/trial_2
+step 5000 | train loss 2.7999 | val loss 3.0648
+  saved new best model to work/trial_2
+step 5500 | train loss 2.9772 | val loss 3.0321
+  saved new best model to work/trial_2
+step 6000 | train loss 3.0778 | val loss 3.0102
+  saved new best model to work/trial_2
+step 6500 | train loss 2.6497 | val loss 2.9786
+  saved new best model to work/trial_2
+step 7000 | train loss 2.6411 | val loss 2.9667
+  saved new best model to work/trial_2
+step 7500 | train loss 2.6673 | val loss 2.9373
+  saved new best model to work/trial_2
+step 8000 | train loss 2.6754 | val loss 2.9306
+  saved new best model to work/trial_2
+step 8500 | train loss 2.6116 | val loss 2.9073
+  saved new best model to work/trial_2
+step 9000 | train loss 2.5527 | val loss 2.8979
+  saved new best model to work/trial_2
+step 9500 | train loss 2.7601 | val loss 2.8792
+  saved new best model to work/trial_2
+Best val loss: 2.8792
+
+===== Trial 3 =====
+{'block_size': 64, 'embed_dim': 128, 'hidden_size': 768, 'num_layers': 2, 'dropout': 0.2, 'batch_size': 128, 'steps': 10000, 'min_count': 1}
+Loading cached vocab from work/shared_cache/vocab_mc1.pt
+Loading cached tensors from work/shared_cache/train_bs64_mc1.pt
+Loading cached tensors from work/shared_cache/val_bs64_mc1.pt
+Loading cached n-gram counts from work/shared_cache/ngram_mc1_ord6.pt
+
+────────────────────────────────────────────────────────────────────
+  Steps: 10,000 | Batch: 128 | Vocab: 9,564 | Train examples: 855,000
+  Val examples: 94,995 | Min count: 1
+  Cache dir: work/shared_cache
+  N-gram order: 6 | Interp alpha: 0.6
+────────────────────────────────────────────────────────────────────
+
+step 0 | train loss 9.1611 | val loss 9.1145
+  saved new best model to work/trial_3
+step 500 | train loss 4.3498 | val loss 4.1659
+  saved new best model to work/trial_3
+step 1000 | train loss 3.9859 | val loss 3.7905
+  saved new best model to work/trial_3
+step 1500 | train loss 3.9312 | val loss 3.6495
+  saved new best model to work/trial_3
+step 2000 | train loss 3.7897 | val loss 3.5679
+  saved new best model to work/trial_3
+step 2500 | train loss 3.8052 | val loss 3.5042
+  saved new best model to work/trial_3
+step 3000 | train loss 3.6216 | val loss 3.4521
+  saved new best model to work/trial_3
+step 3500 | train loss 3.1246 | val loss 3.4049
+  saved new best model to work/trial_3
+step 4000 | train loss 3.3531 | val loss 3.3557
+  saved new best model to work/trial_3
+step 4500 | train loss 3.1558 | val loss 3.3221
+  saved new best model to work/trial_3
+step 5000 | train loss 3.5080 | val loss 3.2840
+  saved new best model to work/trial_3
+step 5500 | train loss 3.1099 | val loss 3.2639
+  saved new best model to work/trial_3
+step 6000 | train loss 3.1639 | val loss 3.2347
+  saved new best model to work/trial_3
+step 6500 | train loss 3.5054 | val loss 3.2164
+  saved new best model to work/trial_3
+step 7000 | train loss 3.2908 | val loss 3.1997
+  saved new best model to work/trial_3
+step 7500 | train loss 3.0778 | val loss 3.1702
+  saved new best model to work/trial_3
+step 8000 | train loss 3.1231 | val loss 3.1528
+  saved new best model to work/trial_3
+step 8500 | train loss 2.9601 | val loss 3.1373
+  saved new best model to work/trial_3
+step 9000 | train loss 3.1303 | val loss 3.1133
+  saved new best model to work/trial_3
+step 9500 | train loss 3.1534 | val loss 3.0963
+  saved new best model to work/trial_3
+Best val loss: 3.0963
+
+================================================================================
+TRIAL SUMMARY
+================================================================================
+trial 0 | best_val_loss=3.0485 | dir=work/trial_0 | cfg={'block_size': 32, 'embed_dim': 128, 'hidden_size': 512, 'num_layers': 2, 'dropout': 0.2, 'batch_size': 256, 'steps': 8000, 'min_count': 1}
+trial 1 | best_val_loss=2.9963 | dir=work/trial_1 | cfg={'block_size': 64, 'embed_dim': 128, 'hidden_size': 512, 'num_layers': 2, 'dropout': 0.2, 'batch_size': 256, 'steps': 8000, 'min_count': 1}
+trial 2 | best_val_loss=2.8792 | dir=work/trial_2 | cfg={'block_size': 64, 'embed_dim': 128, 'hidden_size': 512, 'num_layers': 2, 'dropout': 0.1, 'batch_size': 256, 'steps': 10000, 'min_count': 1}
+trial 3 | best_val_loss=3.0963 | dir=work/trial_3 | cfg={'block_size': 64, 'embed_dim': 128, 'hidden_size': 768, 'num_layers': 2, 'dropout': 0.2, 'batch_size': 128, 'steps': 10000, 'min_count': 1}
+
+BEST TRIAL:
+trial 2
+dir: work/trial_2
+best val loss: 2.8792
+config: {'block_size': 64, 'embed_dim': 128, 'hidden_size': 512, 'num_layers': 2, 'dropout': 0.1, 'batch_size': 256, 'steps': 10000, 'min_count': 1}

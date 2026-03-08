@@ -1,0 +1,4 @@
+Loading model
+Loading test data from testing_data/all_test_input.txt
+Making predictions
+Writing predictions to pred.txt
