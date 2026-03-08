@@ -54,7 +54,7 @@ class MyModel:
             random.shuffle(data)
             return data
         except Exception as e:
-            print("error in load_training_data: " + e)
+            print(f"error in load_training_data: {e}")
 
     @classmethod
     def load_test_data(cls, fname):
@@ -67,7 +67,7 @@ class MyModel:
                     data.append(inp)
             return data
         except Exception as e:
-            print("error in load_test_data: " + e)
+            print(f"error in load_test_data: {e}")
 
     @classmethod
     def write_pred(cls, preds, fname):
@@ -76,7 +76,7 @@ class MyModel:
                 for p in preds:
                     f.write('{}\n'.format(p))
         except Exception as e:
-            print("error in write_pred: " + e)
+            print(f"error in write_pred: {e}")
 
     def run_train(self, data, work_dir):
         try:
@@ -160,7 +160,7 @@ class MyModel:
             print("Model saved to", work_dir)
 
         except Exception as e:
-            print("error in run_test: " + e)
+            print(f"error in run_test: {e}")
         
 
     def run_pred(self, data, work_dir):
@@ -223,7 +223,7 @@ class MyModel:
 
             return final_preds
         except Exception as e:
-            print("error in run_test: " + e)
+            print(f"error in run_test: {e}")
 
     def save(self, work_dir):
         try:
@@ -238,7 +238,7 @@ class MyModel:
                 else:
                     f.write("no-args\n")
         except Exception as e:
-            print("error in save: " + e)
+            print(f"error in save: {e}")
 
     @classmethod
     def load(cls, work_dir):
@@ -252,7 +252,7 @@ class MyModel:
             # (and if your model has/needs an args object).
             return model
         except Exception as e:
-            print("error in load: " + e)
+            print(f"error in load: {e}")
             return None
 
 
