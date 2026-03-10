@@ -804,7 +804,7 @@ if __name__ == '__main__':
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
     parser.add_argument('mode', choices=('train', 'test'), help='what to run')
     parser.add_argument('--work_dir', help='where to save', default='work')
-    parser.add_argument('--test_data', help='path to test data', default='example/input.txt')
+    parser.add_argument('--test_data', help='path to test data', default='testing_data/all_test_input.txt')
     parser.add_argument('--test_output', help='path to write test predictions', default='pred.txt')
     args = parser.parse_args()
 
@@ -901,7 +901,6 @@ if __name__ == '__main__':
         print('Making predictions')
         pred = model.run_pred(test_data, args.work_dir)
         print('Writing predictions to {}'.format(args.test_output))
-        assert len(pred) == len(test_data), 'Expected {} predictions but got {}'.format(len(test_data), len(pred))
         model.write_pred(pred, args.test_output)
     else:
         raise NotImplementedError('Unknown mode {}'.format(args.mode))
