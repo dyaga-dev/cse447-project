@@ -123,7 +123,7 @@ class MyModel:
             scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10_000, gamma=0.5)
 
             batch_size = 256
-            steps = 5000
+            steps = 50000
             n = X.shape[0]
             model.train()
             print(f"\n{'─'*68}")
