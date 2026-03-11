@@ -9,6 +9,7 @@ import torch.nn.functional as F
 import os
 import torch.nn as nn
 from collections import Counter
+import time
 
 # LSTM model suggested by Claude, reference: https://medium.com/data-science/language-modeling-with-lstms-in-pytorch-381a26badcbf
 class CharacterLSTM(nn.Module):
@@ -138,7 +139,7 @@ class MyModel:
                 logits = model(xb)
                 loss   = F.cross_entropy(logits, yb)
 
-                optimizer.zero_grad()
+                optimizer.zero_grad(set_to_none=True)
                 loss.backward()
                 torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                 optimizer.step()
@@ -164,11 +165,15 @@ class MyModel:
         
 
     def run_pred(self, data, work_dir):
-        # your code here
         try:
-            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            if torch.cuda.is_available():
+                device = torch.device("cuda")
+            elif torch.backends.mps.is_available():
+                device = torch.device("mps")
+            else:
+                device = torch.device("cpu")
 
-            checkpoint = torch.load(os.path.join(work_dir, "model.pt"), map_location =device)
+            checkpoint = torch.load(os.path.join(work_dir, "model.pt"), map_location=device)
 
             ctoi       = checkpoint["ctoi"]
             itoc       = checkpoint["itoc"]
@@ -176,55 +181,74 @@ class MyModel:
             vocab_size = checkpoint["vocab_size"]
 
             model = CharacterLSTM(
-                vocab_size  = vocab_size,
-                embed_dim   = checkpoint["embed_dim"],
-                hidden_size = checkpoint["hidden_size"],
-                num_layers  = checkpoint["num_layers"],
-                dropout     = checkpoint["dropout"],
+                vocab_size=vocab_size,
+                embed_dim=checkpoint["embed_dim"],
+                hidden_size=checkpoint["hidden_size"],
+                num_layers=checkpoint["num_layers"],
+                dropout=checkpoint["dropout"],
             )
             model.load_state_dict(checkpoint["model_state"])
             model.to(device)
             model.eval()
+
+            if device.type == "cuda":
+                torch.backends.cudnn.benchmark = True
+
             PAD = ctoi["."]
-            batch_size = 128
+            batch_size = 1024 if device.type in ("cuda", "mps") else 256
+            use_amp = (device.type == "cuda")
 
-            final_preds = [""]*len(data)
+            final_preds = [""] * len(data)
+            itos = [itoc[i] for i in range(vocab_size)]
 
-            # preprocess data first
-            contexts = []
-            for line in data:
+            valid_contexts = []
+            valid_original_indices = []
+
+            for i, line in enumerate(data):
                 s = line.strip()
                 if not s:
-                    contexts.append(None)
                     continue
-                ctx = [PAD] * block_size
-                for ch in s[-block_size:]:
-                    if ch in ctoi:
-                        ctx = ctx[1:] + [ctoi[ch]]
+
+                encoded = [ctoi.get(ch, PAD) for ch in s[-block_size:]]
+                ctx = [PAD] * (block_size - len(encoded)) + encoded
+
+                valid_contexts.append(ctx)
+                valid_original_indices.append(i)
+
+            if not valid_contexts:
+                return final_preds
+
+            X_all = torch.tensor(valid_contexts, dtype=torch.long)
+            if device.type == "cuda":
+                X_all = X_all.pin_memory()
+
+            with torch.inference_mode():
+                for start in range(0, len(valid_original_indices), batch_size):
+                    end = start + batch_size
+                    if device.type == "cuda":
+                        x_b = X_all[start:end].to(device, non_blocking=True)
                     else:
-                        ctx = ctx[1:] + [PAD]
-                contexts.append(ctx)
-            indices = [i for i, c in enumerate(contexts) if c is not None]
+                        x_b = X_all[start:end].to(device)
 
-            
-            for batch_start in range(0, len(indices), batch_size):
-                batch_idx = indices[batch_start : batch_start + batch_size]
-                x_b = torch.tensor([contexts[i] for i in batch_idx], dtype=torch.long).to(device)
+                    if use_amp:
+                        with torch.autocast(device_type="cuda"):
+                            logits = model(x_b)
+                    else:
+                        logits = model(x_b)
 
-                with torch.no_grad():
-                    logits = model(x_b)                     
-                    probs  = F.softmax(logits, dim=-1)          
+                    top_idx = torch.topk(logits, 3, dim=-1, sorted=False).indices.cpu()
 
-                top_probs, top_idx = torch.topk(probs, 3, dim=-1) 
+                    batch_top = top_idx.tolist()
+                    batch_orig = valid_original_indices[start:end]
 
-                for j, orig_i in enumerate(batch_idx):
-                    chars = "".join(itoc[idx.item()] for idx in top_idx[j])
-                    final_preds[orig_i] = chars
+                    for orig_i, pred_ids in zip(batch_orig, batch_top):
+                        final_preds[orig_i] = "".join(itos[idx] for idx in pred_ids)
 
             return final_preds
+
         except Exception as e:
             print(f"error in run_test: {e}")
-
+    
     def save(self, work_dir):
         try:
             os.makedirs(work_dir, exist_ok=True)
