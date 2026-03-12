@@ -9,7 +9,6 @@ import torch.nn.functional as F
 import os
 import torch.nn as nn
 from collections import Counter
-import time
 
 # LSTM model suggested by Claude, reference: https://medium.com/data-science/language-modeling-with-lstms-in-pytorch-381a26badcbf
 class CharacterLSTM(nn.Module):
